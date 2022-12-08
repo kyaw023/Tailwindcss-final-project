@@ -1,0 +1,1302 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Parisienne&family=Playfair+Display&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<style>
+     *{
+        font-family: 'DM Sans', sans-serif;
+        /* font-family: 'Quicksand', sans-serif; */
+     }
+</style>
+<body class="dark:bg-slate-900">
+         <!-- head -->
+        <div class="head bg-[#131442] py-5 md:flex items-center justify-center hidden">
+            <span class=" text-slate-200 font-bold">Q4 Update:</span><span class=" text-slate-200 font-bold mr-4">Ionic show.</span><span class=" text-slate-500 font-bold mr-8">December 13th 2022.</span>
+            <button class="bg-slate-200 text-base font-semibold py-2 px-4 rounded-full">Register Now<i class="fa-solid fa-arrow-right ml-1"></i></button>
+        </div>
+    
+
+        <!-- nav -->
+        <section class="">
+            <div class="nav-hide lg:container  mx-auto md:mx-0 lg:px-28 bg-[#fbfbfc] dark:bg-slate-800 ">
+
+                <div class=" flex items-center justify-between lg:justify-between px-3 md:space-x-5 ">
+                        <!-- logo -->
+                        <div>
+                                <svg class="dark:hidden" width="80" height="80" viewBox="0 0 698 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M669.427 141.898C666.143 150.728 657.949 155.628 647.824 155.628C632.797 155.628 620.616 143.451 620.616 128.43C620.616 113.409 632.797 101.232 647.824 101.232C657.95 101.232 665.892 105.55 669.428 114.963H697.177C692.581 90.8263 672.505 75.3333 647.824 75.3333C618.488 75.3333 594.707 99.1054 594.707 128.43C594.707 157.754 618.488 181.526 647.824 181.526C672.505 181.526 693.84 164.193 697.176 141.898H669.427Z" fill="black"/>
+                                    <path d="M555.15 78.0007H584.042V179.649H555.15V78.0007Z" fill="black"/>
+                                    <path d="M586.949 53.4355C586.949 63.0649 579.14 70.871 569.507 70.871C559.874 70.871 552.064 63.0649 552.064 53.4355C552.064 43.8061 559.874 36 569.507 36C579.14 36 586.949 43.8061 586.949 53.4355Z" fill="black"/>
+                                    <path d="M472.392 90.441C477.237 81.6971 488.247 75.7277 504.103 75.7277C529.736 75.7277 543.301 92.0385 543.301 116.252V179.646H514.409V119.279C514.409 107.424 509.124 99.269 496.351 99.269C482.346 99.269 474.594 107.845 474.594 121.381V179.562H445.702V77.9978H472.392V90.441Z" fill="black"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M383.239 155.628C398.264 155.628 410.445 143.451 410.445 128.432C410.445 113.412 398.264 101.235 383.239 101.235C368.213 101.235 356.032 113.412 356.032 128.432C356.032 143.451 368.213 155.628 383.239 155.628ZM383.239 181.526C412.573 181.526 436.354 157.755 436.354 128.432C436.354 99.1082 412.573 75.337 383.239 75.337C353.904 75.337 330.124 99.1082 330.124 128.432C330.124 157.755 353.904 181.526 383.239 181.526Z" fill="black"/>
+                                    <path d="M291.086 78.0007H319.978V179.649H291.086V78.0007Z" fill="black"/>
+                                    <path d="M322.885 53.4355C322.885 63.0649 315.076 70.871 305.443 70.871C295.809 70.871 288 63.0649 288 53.4355C288 43.8061 295.809 36 305.443 36C315.076 36 322.885 43.8061 322.885 53.4355Z" fill="black"/>
+                                    <path d="M28.8 120C28.8 69.6316 69.6316 28.8 120 28.8C140.276 28.8 158.996 35.4057 174.143 46.6017C178.116 37.2507 186.122 30.0268 195.978 27.1135C175.295 10.1784 148.828 0 120 0C53.7258 0 0 53.7258 0 120C0 186.274 53.7258 240 120 240C186.274 240 240 186.274 240 120C240 106.13 237.641 92.7867 233.296 80.3656C227.385 88.3578 218.082 93.6899 207.514 94.2366C209.912 102.396 211.2 111.039 211.2 120C211.2 170.368 170.368 211.2 120 211.2C69.6316 211.2 28.8 170.368 28.8 120Z" fill="black"/>
+                                    <path d="M237.533 95.687C236.454 90.4492 235.034 85.3336 233.296 80.3655C227.385 88.3576 218.082 93.6897 207.514 94.2365C209.21 100.008 210.351 106.021 210.874 112.218C222.003 110.85 231.624 104.605 237.533 95.687Z" fill="black"/>
+                                    <path d="M120 172.5C148.927 172.5 172.5 148.972 172.5 120C172.5 91.0734 148.972 67.5001 120 67.5001C91.0283 67.5001 67.5 91.0734 67.5 120C67.5 148.927 91.0733 172.5 120 172.5Z" fill="black"/>
+                                    <path d="M198.75 75.0001C213.247 75.0001 225 63.2475 225 48.7501C225 34.2526 213.247 22.5001 198.75 22.5001C184.253 22.5001 172.5 34.2526 172.5 48.7501C172.5 63.2475 184.253 75.0001 198.75 75.0001Z" fill="black"/>
+                                </svg>
+                                <svg class="hidden dark:block" width="80" height="80" viewBox="0 0 698 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M669.427 141.898C666.143 150.728 657.949 155.628 647.824 155.628C632.797 155.628 620.616 143.451 620.616 128.43C620.616 113.409 632.797 101.232 647.824 101.232C657.95 101.232 665.892 105.55 669.428 114.963H697.177C692.581 90.8263 672.505 75.3333 647.824 75.3333C618.488 75.3333 594.707 99.1054 594.707 128.43C594.707 157.754 618.488 181.526 647.824 181.526C672.505 181.526 693.84 164.193 697.176 141.898H669.427Z" fill="white"/>
+                                    <path d="M555.15 78.0007H584.042V179.649H555.15V78.0007Z" fill="white"/>
+                                    <path d="M586.949 53.4355C586.949 63.0649 579.14 70.871 569.507 70.871C559.874 70.871 552.065 63.0649 552.065 53.4355C552.065 43.8061 559.874 36 569.507 36C579.14 36 586.949 43.8061 586.949 53.4355Z" fill="white"/>
+                                    <path d="M472.392 90.441C477.237 81.6971 488.247 75.7277 504.103 75.7277C529.736 75.7277 543.301 92.0385 543.301 116.252V179.646H514.409V119.279C514.409 107.424 509.124 99.269 496.351 99.269C482.346 99.269 474.594 107.845 474.594 121.381V179.562H445.702V77.9978H472.392V90.441Z" fill="white"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M383.239 155.628C398.264 155.628 410.445 143.451 410.445 128.432C410.445 113.412 398.264 101.235 383.239 101.235C368.213 101.235 356.032 113.412 356.032 128.432C356.032 143.451 368.213 155.628 383.239 155.628ZM383.239 181.526C412.573 181.526 436.354 157.755 436.354 128.432C436.354 99.1082 412.573 75.337 383.239 75.337C353.904 75.337 330.124 99.1082 330.124 128.432C330.124 157.755 353.904 181.526 383.239 181.526Z" fill="white"/>
+                                    <path d="M291.086 78.0007H319.978V179.649H291.086V78.0007Z" fill="white"/>
+                                    <path d="M322.885 53.4355C322.885 63.0649 315.076 70.871 305.443 70.871C295.809 70.871 288 63.0649 288 53.4355C288 43.8061 295.809 36 305.443 36C315.076 36 322.885 43.8061 322.885 53.4355Z" fill="white"/>
+                                    <path d="M28.8 120C28.8 69.6316 69.6316 28.8 120 28.8C140.276 28.8 158.996 35.4057 174.143 46.6017C178.116 37.2507 186.122 30.0268 195.978 27.1135C175.295 10.1784 148.828 0 120 0C53.7258 0 0 53.7258 0 120C0 186.274 53.7258 240 120 240C186.274 240 240 186.274 240 120C240 106.13 237.641 92.7867 233.296 80.3656C227.385 88.3578 218.082 93.6899 207.514 94.2366C209.912 102.396 211.2 111.039 211.2 120C211.2 170.368 170.368 211.2 120 211.2C69.6316 211.2 28.8 170.368 28.8 120Z" fill="url(#paint0_angular)"/>
+                                    <path opacity="0.3" d="M237.533 95.687C236.454 90.4492 235.034 85.3335 233.296 80.3654C227.385 88.3576 218.082 93.6896 207.514 94.2364C209.21 100.008 210.351 106.021 210.874 112.218C222.003 110.85 231.624 104.605 237.533 95.687Z" fill="black"/>
+                                    <path d="M120 172.5C148.927 172.5 172.5 148.972 172.5 120C172.5 91.0734 148.972 67.5001 120 67.5001C91.0283 67.5001 67.5 91.0734 67.5 120C67.5 148.927 91.0733 172.5 120 172.5Z" fill="white"/>
+                                    <path d="M198.75 75.0001C213.247 75.0001 225 63.2475 225 48.7501C225 34.2526 213.247 22.5001 198.75 22.5001C184.253 22.5001 172.5 34.2526 172.5 48.7501C172.5 63.2475 184.253 75.0001 198.75 75.0001Z" fill="white"/>
+                                    <defs>
+                                    <radialGradient id="paint0_angular" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(120 120) rotate(-20.2249) scale(91.1181 92.3752)">
+                                    <stop stop-color="white" stop-opacity="0.8"/>
+                                    <stop offset="0.114583" stop-color="white"/>
+                                    <stop offset="1" stop-color="white"/>
+                                    </radialGradient>
+                                    </defs>
+                                </svg>
+                                    
+                        </div>
+
+                        <!-- menu -->
+                        <div class="hidden lg:block all-fixed">
+                            <ul class="flex items-center mega-fixed lg:space-x-14 md:space-x-8 font-medium dark:text-slate-300">
+                                <div>
+                                    <div class="group mega "> 
+                                        <li class="hover:bg-green hover:px-4 hover:py-2 hover:rounded-full hover:shadow-xl ">Platforms</li>
+                                        <div class="group mega-one top-fixed w-[1200px] absolute top-40 right-36 bg-white dark:bg-slate-800 shadow-2xl px-10 py-5 rounded-2xl lg:flex hidden space-x-40  transition-all duration-300 delay-150">
+                                            <div class=" relative">
+                                                <img class=" w-96 h-72 rounded-xl shadow-xl" src="/assets/images/bg.png" alt="">
+                                                <div class=" absolute top-10 left-10 space-y-5">
+                                                        <h1 class=" text-xl font-semibold text-white">Ionic for enterprise</h1>
+                                                        <p class=" text-base font-semibold text-slate-100">Accelerate the way your business builds morder apps at scale</p>
+                                                        <button class="px-3 py-2 bg-slate-500 rounded-full text-slate-100 font-semibold">Learn more <i class="fa-solid fa-arrow-right"></i></button>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <ul class=" flex space-x-20">
+                                                        <div>
+                                                                <div class="mb-3">
+                                                                    <span class=" font-bold text-base text-slate-900 dark:text-slate-200">Mobile App Dev</span>
+                                                                </div>
+                                                                <div>
+                                                                        <ul class=" space-y-5">
+                                                                            <li class=" text-slate-900 font-medium text-sm dark:text-slate-400">Ionic SDK</li>
+                                                                            <li class=" text-slate-900 font-medium text-sm dark:text-slate-400">Portals</li>
+                                                                            <li class=" text-slate-900 font-medium text-sm dark:text-slate-400">Integrations</li>
+                                                                            <li class=" text-slate-900 font-medium text-sm dark:text-slate-400">Explore <span class=" text-base font-bold">Docs <i class="fa-solid fa-arrow-right"></i></span></li>
+                                                                        </ul>
+                                                                </div>
+                                                        </div>
+
+                                                        <div>
+                                                            <div class=" mb-3">
+                                                                <span class=" font-bold text-base text-slate-900 dark:text-slate-200">Mobile CI/CD</span>
+                                                            </div>
+                                                            <div>
+                                                                <ul class=" space-y-5">
+                                                                    <li class=" text-slate-900 text-sm dark:text-slate-400">Overview</li>
+                                                                    <li class=" text-slate-900 text-sm dark:text-slate-400">Live Updates</li>
+                                                                    <li class=" text-slate-900 text-sm dark:text-slate-400">Native Builds</li>
+                                                                    <li class=" text-slate-900 text-sm dark:text-slate-400">App Publishing</li>
+                                                                    <li class=" text-slate-900 text-sm dark:text-slate-400">Automation</li>
+                                                                    <li class=" text-slate-900 text-sm dark:text-slate-400">Explore <span class=" font-bold text-base"> Appflow<i class="fa-solid fa-arrow-right"></i></span></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+
+                                                        <div>
+                                                            <div class=" mb-3">
+                                                            <span class=" font-bold text-base text-slate-900 dark:text-slate-200">Mobile Security</span>
+                                                            </div>
+                                                            <div>
+                                                                <ul class=" space-y-5">
+                                                                <li class=" text-slate-900 text-sm dark:text-slate-400">Auth</li>
+                                                                <li class=" text-slate-900 text-sm dark:text-slate-400">Biometics</li>
+                                                                <li class=" text-slate-900 text-sm dark:text-slate-400">Storage</li>
+                                                                </ul>
+                                                            </div>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="group mega">
+                                        <li class=" hover:bg-green hover:px-4 hover:py-2 hover:rounded-full hover:shadow-xl ">Solutions</li>
+                                    <div class="group mega-one w-[1200px] bg-white dark:bg-slate-800 shadow-2xl px-10 py-5  rounded-2xl lg:flex hidden space-x-10 transition-all duration-300 delay-150 absolute top-40 right-36">
+                                                <div>
+                                                <h1 class=" font-bold text-lg text-slate-900 mb-3 dark:text-slate-200">Solution</h1>
+                                                <p class=" max-w-xs text-slate-500 dark:text-slate-200">Learn how to make the most of the Ionic app development platform.</p>
+                                                </div>
+                                            <div>
+                                                <ul>
+                                                    <div class="mb-5">
+                                                    <span class=" text-slate-900 font-bold dark:text-slate-200">Use Cases</span>
+                                                    </div>
+                                                    <div class="space-y-5">
+                                                        <li class=" text-slate-900 text-sm dark:text-slate-400">App Creation</li>
+                                                        <li class=" text-slate-900 text-sm dark:text-slate-400">Mobile Security</li>
+                                                        <li class=" text-slate-900 text-sm dark:text-slate-400">CI/CD App Delivery</li>
+                                                        <li class=" text-slate-900 text-sm dark:text-slate-400">Mobile Micro Frontends</li>
+                                                        <li class=" text-slate-900 text-sm dark:text-slate-400">Digital Transformation</li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                            <ul>
+                                                <div class="mb-5">
+                                                    <span class=" text-slate-900 font-bold dark:text-slate-200">Why Ionic</span>
+                                                </div>
+                                                <div class="space-y-5">
+                                                    <li class=" text-slate-900 text-sm dark:text-slate-400">For Developers</li>
+                                                    <li class=" text-slate-900 text-sm dark:text-slate-400">For Architects</li>
+                                                    <li class=" text-slate-900 text-sm dark:text-slate-400">For IT Executives</li>
+                                                    <li class=" text-slate-900 text-sm dark:text-slate-400">Customer Stories →</li>
+                                                </div>
+                                            </ul>
+                                            </div>
+                                            <div>
+                                            <ul class=" bg-slate-300 px-10 py-10 rounded-xl">
+                                                <div class="mb-3">
+                                                    <span class=" text-slate-900 font-bold">Industries</span>
+                                                </div>
+                                                <div class=" flex items-center space-x-9">
+                                                    <div class=" space-y-3">
+                                                            <div class=" flex items-center space-x-2">
+                                                                <i class="fa-solid fa-building-columns  text-slate-900"></i>
+                                                                <li class=" text-slate-900">Banking</li>
+                                                            </div>
+                                                            <div class=" flex items-center space-x-2">
+                                                                <i class="fa-solid fa-book-open text-slate-900"></i>
+                                                                <li class=" text-slate-900">Education</li>
+                                                            </div>
+                                                            <div class=" flex items-center space-x-2">
+                                                                <i class="fa-solid fa-building text-slate-900"></i>
+                                                                <li class=" text-slate-900">Manufacturing</li>
+                                                            </div>
+                                                            <div class=" flex items-center space-x-2">
+                                                                <i class="fa-solid fa-microchip text-slate-900"></i>
+                                                                <li class=" text-slate-900">Technology</li>
+                                                            </div>
+                                                    </div>
+                                                    <div class=" space-y-3">
+                                                            <div class=" flex items-center space-x-2">
+                                                                <i class="fa-regular fa-compass text-slate-900"></i>
+                                                                <li class="text-slate-900">Trasnsportation</li>
+                                                            </div>
+                                                            <div class=" flex items-center space-x-2">
+                                                                <i class="fa-regular fa-heart text-slate-900"></i>
+                                                                <li class="text-slate-900">Hearthcare</li>
+                                                            </div>
+                                                            <div class=" flex items-center space-x-2">
+                                                                <i class="fa-solid fa-square-check text-slate-900"></i>
+                                                                <li class="text-slate-900">Insurance</li>
+                                                            </div>
+                                                            <div class=" flex items-center space-x-2">
+                                                                <i class="fa-solid fa-cart-shopping text-slate-900"></i>
+                                                                <li class=" text-slate-900">Retail</li>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                            </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="group mega">
+                                        <li class="hover:bg-green hover:px-4 hover:py-2 hover:rounded-full hover:shadow-xl ">Resources</li>
+                                    <div class="group mega-one lg:flex hidden top-fixed w-[1200px] bg-white dark:bg-slate-800 shadow-2xl px-10 py-5  rounded-2xl space-x-36 transition-all duration-300 delay-150 absolute top-40 right-36">
+                                        <div class=" space-y-10">
+                                            <div class="">
+                                            <h1 class=" font-bold text-lg text-slate-900 mb-3 dark:text-slate-200">Resources</h1>
+                                            <p class=" max-w-xs text-slate-500 dark:text-slate-200"> Resources to help you learn how to build ,secure,and deliver amazing apps</p>
+                                            </div>
+                                            <div>
+                                            <h1 class="text-base font-bold text-slate-900 mb-3 dark:text-slate-200">Inoic Doucs<i class="fa-solid fa-arrow-right"></i></h1>
+                                            <span class="text-base font-bold text-slate-900 dark:text-slate-200">Resource Center <i class="fa-solid fa-arrow-right"></i></span>
+                                            </div>
+                                    </div>
+                                            <div>
+                                                <ul>
+                                                    <div class="mb-3">
+                                                    <span class=" text-slate-900 font-bold dark:text-slate-200">Developers</span>
+                                                    </div>
+                                                    <div class="space-y-5">
+                                                        <li class=" text-slate-900 text-sm dark:text-slate-400">Documentation</li>
+                                                        <li class=" text-slate-900 text-sm dark:text-slate-400">Ionic Framewokr</li>
+                                                        <li class=" text-slate-900 text-sm dark:text-slate-400">Native Plugins</li>
+                                                        <li class=" text-slate-900 text-sm dark:text-slate-400">Ionic Appflow</li>
+                                                        <li class=" text-slate-900 text-sm dark:text-slate-400">Ionic CLI</li>
+                                                        <li class=" text-slate-900 text-sm dark:text-slate-400">Portals</li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                            <ul>
+                                                <div class="mb-3">
+                                                    <span class=" text-slate-900 font-bold dark:text-slate-200">Learn</span>
+                                                </div>
+                                                <div class="space-y-5">
+                                                    <li class=" text-slate-900 text-sm dark:text-slate-400">Blog</li>
+                                                    <li class=" text-slate-900 text-sm dark:text-slate-400">Webinars</li>
+                                                    <li class=" text-slate-900 text-sm dark:text-slate-400">Articles</li>
+                                                    <li class=" text-slate-900 text-sm dark:text-slate-400">eBooks</li>
+                                                </div>
+                                            </ul>
+                                            </div>
+                                            <div>
+                                            <ul class="">
+                                                <div class="mb-3">
+                                                    <span class=" text-slate-900 font-bold dark:text-slate-200">Community</span>
+                                                </div>
+                                                <div class="space-y-5">
+                                                            <li class=" text-slate-900 text-sm dark:text-slate-400">Community Hub</li>
+                                                            <li class=" text-slate-900 text-sm dark:text-slate-400">Trusted Partners</li>
+                                                            <li class=" text-slate-900 text-sm dark:text-slate-400">ioniconf 22</li>
+                                                            <li class=" text-slate-900 text-sm dark:text-slate-400">Forum</li>
+                                                            <li class=" text-slate-900 text-sm dark:text-slate-400">Discord</li>
+                                                    </div>
+                                            </ul>
+                                            </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="group mega">
+                                        <li class="hover:bg-green hover:px-4 hover:py-2 hover:rounded-full hover:shadow-xl ">Company</li>
+                                    <div class="group mega-one lg:flex hidden top-fixed bg-white dark:bg-slate-800 shadow-2xl px-10 py-5 rounded-2xl space-x-10 transition-all duration-300 delay-150 absolute top-40 right-40 w-[1200px]">
+                                            <div >
+                                            <h1 class=" font-bold text-lg text-slate-900 mb-3 dark:text-slate-200">About Ionic</h1>
+                                            <p class=" max-w-xs text-slate-500 text-lg dark:text-slate-200">Get to know the people behind the code,the mission behind our work,nand our version for the future</p>
+                                            </div>
+                                            <div>
+                                                <ul>
+                                                    <div class="mb-3">
+                                                    <span class=" text-slate-900 font-bold dark:text-slate-200">Company</span>
+                                                    </div>
+                                                    <div class="space-y-3">
+                                                        <li class=" text-slate-900 text-sm dark:text-slate-400">About us</li>
+                                                        <li class=" text-slate-900 text-sm dark:text-slate-400">Careers(we're hiring)</li>
+                                                        <li class=" text-slate-900 text-sm dark:text-slate-400">Blog</li>
+                                                        <li class=" text-slate-900 text-sm dark:text-slate-400">Trusted Partners</li>
+                                                        <li class=" text-slate-900 text-sm dark:text-slate-400">Press</li>
+                                                        <li class=" text-slate-900 text-sm dark:text-slate-400">Contact</li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                            <div>
+                                            <ul>
+                                                <div class="mb-3">
+                                                    <span class=" text-slate-900 font-bold dark:text-slate-200">Customer Sucess</span>
+                                                </div>
+                                                <div class="space-y-3">
+                                                    <li class=" text-slate-900 text-sm dark:text-slate-400">Advisory Serivces</li>
+                                                    <li class=" text-slate-900 text-sm dark:text-slate-400">enterprise Support</li>
+                                                    <li class=" text-slate-900 text-sm dark:text-slate-400">Team Traning</li>
+                                                    <li class=" text-slate-900 text-sm dark:text-slate-400">Submit a ticket</li>
+                                                </div>
+                                            </ul>
+                                            </div>
+                                            <div>
+                                                <div class=" relative">
+                                                    <img class=" w-96 h-60 rounded-2xl" src="/assets/images/bg (1).png" alt="">
+                                                    <div class=" absolute top-10 left-5 space-y-5">
+                                                        <span class=" text-sm font-bold text-slate-200">Featured eBook</span>
+                                                        <h1 class="text-xl font-bold text-slate-200">Hybrid vs. Native</h1>
+                                                        <p class="text-sm font-bold text-slate-200">Learn the differences between hybrid and native apps - we break down all the myths</p>
+                                                        <button class=" bg-green round text-slate-900 px-3 py-1 rounded-full">Read the eBooks-></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <li><a href="pricing.html">Pricing</a></li>
+                                <li><a href="blog.html">BLog</a></li>
+                            </ul>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="lg:hidden mobile-slide hidden overflow-y-scroll fixed h-screen px-5 md:px-20 py-20 z-10 dark:bg-slate-900 rounded-3xl bg-white  top-20 md:left-16 md:right-16 left-0 right-1 md:w-[680px] w-full transition duration-300 delay-150">
+                                <div class=" border-b-2 space-y-3 mb-8 py-5">
+                                    <div class="flex items-center md:justify-between space-x-56">
+                                    <h1 class=" text-sm font-semibold text-slate-400 dark:text-slate-300">Platform</h1>
+                                    <div class="w-10 h-10 bg-emerald-400 flex items-center justify-center rounded-full shadow-xl ">
+                                        <i class="fa-solid fa-xmark text-xl text-white mobile-close"></i>
+                                    </div>
+                                    </div>
+                                    <div>
+                                        <h1 class="text-xl font-bold dark:text-slate-100">Why Ionic?</h1>
+                                        
+                                    </div>
+                                    <div class="">
+                                        <div class="accordion ">
+                                            <div class="accordion-header flex items-center justify-between mb-3 drop-btn">
+                                                <h1 class="text-xl font-bold dark:text-slate-100">Features</h1>
+                                                <i class="fa-sharp fa-solid fa-chevron-up dark:text-slate-200 drop-icon"></i>
+                                            </div>
+                                            <ul class="accordion-body flex md:space-x-40 space-x-20 ">
+                                                <div class=" space-y-3 ">
+                                                    <li class=" text-sm font-semibold text-slate-700">Framework</li>
+                                                    <li class=" text-sm font-semibold text-slate-700">Appflow</li>
+                                                    <li class=" text-sm font-semibold text-slate-700">Secure Stroage</li>
+                                                    <li class=" text-sm font-semibold text-slate-700">Advisory</li>
+                                                </div>
+                                                <div class="space-y-3">
+                                                    <li class=" text-sm font-semibold text-slate-700">Capacitor</li>
+                                                    <li class=" text-sm font-semibold text-slate-700">Identity Vault</li>
+                                                    <li class=" text-sm font-semibold text-slate-700">Auth Connect</li>
+                                                </div>
+                                            </ul>
+                                        </div>   
+                                    </div>
+                                    <div>
+                                        <h1 class="text-xl font-bold dark:text-slate-100">Pricing</h1>
+                                    </div>
+                                </div>
+                                <div class=" mb-3 border-b-2 space-y-3 py-5">
+                                    <span class=" text-sm font-semibold text-slate-400">Resources</span>
+                                    <div class=" space-y-3">
+                                        <!-- loop -->
+                                        <div class="accordion">
+                                            <div class="accordion-header flex items-center md:justify-between space-x-56 mb-3 drop-btn">
+                                                <h1 class=" text-xl font-bold dark:text-slate-50">Solutions</h1>
+                                                <i class="fa-sharp fa-solid fa-chevron-up dark:text-slate-50 drop-icon "></i>
+                                            </div>
+                                                <ul class="accordion-body flex md:space-x-40 space-x-20">
+                                                    <div class="space-y-3">
+                                                        <li class=" text-sm font-semibold text-slate-700">App Creation</li>
+                                                        <li class=" text-sm font-semibold text-slate-700">App Delivery</li>
+                                                    </div>
+                                                    <div>
+                                                        <li class=" text-sm font-semibold text-slate-700">Mobile Security</li>
+                                                    </div>
+                                                </ul>
+                                        </div>
+                                        <!-- loop -->
+                                        <div class="accordion">
+                                            <div class="accordion-header hidden items-center md:justify-between space-x-56 mb-3 drop-btn">
+                                                <h1 class=" text-xl font-bold dark:text-slate-100">Industries</h1>
+                                                <i class="fa-sharp fa-solid fa-chevron-up dark:text-slate-50 drop-icon"></i>
+                                            </div>
+                                            <ul class="accordion-body md:space-x-40 space-x-20 flex">
+                                                <div class=" space-y-3 ">
+                                                    <li class=" text-sm font-semibold text-slate-700">Banking</li>
+                                                    <li class=" text-sm font-semibold text-slate-700">Education</li>
+                                                    <li class=" text-sm font-semibold text-slate-700">Manufacturing</li>
+                                                    <li class=" text-sm font-semibold text-slate-700">Technology</li>
+                                                </div>
+                                                <div class="space-y-3">
+                                                    <li class=" text-sm font-semibold text-slate-700">Healthcare</li>
+                                                    <li class=" text-sm font-semibold text-slate-700">Insurance</li>
+                                                    <li class=" text-sm font-semibold text-slate-700">Retail</li>
+                                                    <li class=" text-sm font-semibold text-slate-700">Transportation</li>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                        <div class=" space-y-3">
+                                            <h1 class=" text-xl font-bold dark:text-slate-100">Resource Center</h1>
+                                            <h3 class=" text-xl font-bold dark:text-slate-100">Customer stroies</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" space-y-3 border-b-2  py-5">
+                                    <span class=" text-sm font-semibold text-slate-400">Developers</span>
+                                    <div>
+                                        <h1 class=" text-xl font-bold dark:text-slate-100">Docs</h1>
+                                    </div>
+
+                                    <!-- loop -->
+                                    <div class="accordion">
+                                        <div class="accordion-header flex items-center md:justify-between space-x-56 mb-3 drop-btn">
+                                            <h1 class=" text-xl font-bold dark:text-slate-100">Quickstart</h1>
+                                            <i class="fa-sharp fa-solid fa-chevron-up dark:text-slate-100 drop-icon"></i>
+                                        </div>
+                                        <ul class="accordion-body md:space-x-40 space-x-20 flex">
+                                            <div class=" space-y-3">
+                                                <li class=" text-sm font-semibold text-slate-700">Ionic Framework</li>
+                                                <li class=" text-sm font-semibold text-slate-700">Appflow</li>
+                                                <li class=" text-sm font-semibold text-slate-700">Secure Stroage</li>
+                                                <li class=" text-sm font-semibold text-slate-700">Premier Plugins</li>
+                                                <li class=" text-sm font-semibold text-slate-700">Github</li>
+                                            </div>
+                                            <div class="space-y-3">
+                                                <li class=" text-sm font-semibold text-slate-700">Capacitor</li>
+                                                <li class=" text-sm font-semibold text-slate-700">Identity Vault</li>
+                                                <li class=" text-sm font-semibold text-slate-700">Auth Connect</li>
+                                                <li class=" text-sm font-semibold text-slate-700">Community</li>
+                                            </div>
+                                        </ul>
+                                    </div>
+
+                                    <!-- loop -->
+                                    <div class="accordion">
+                                        <div class="accordion-header flex flex-row items-center space-x-20 mb-3">
+                                            <span class=" text-xl font-bold dark:text-slate-100">Ionic Open Source</span>
+                                            <i class="fa-sharp fa-solid fa-chevron-up drop-icon"></i>
+                                        </div>
+                                        <ul class="accordion-body md:space-x-40 space-x-20 space-y-0 flex">
+                                            <div class="space-y-3">
+                                                <li class=" text-sm font-semibold text-slate-700">Ionic Framework</li>
+                                                <li class=" text-sm font-semibold text-slate-700">Stencil</li>
+                                            </div>
+                                            <div class="space-y-3">
+                                                <li class=" text-sm font-semibold text-slate-700">Capacitor</li>
+                                                <li class=" text-sm font-semibold text-slate-700">Ionicons</li>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                                <div class=" space-y-3 mt-5">
+                                    <h1 class=" text-xl font-bold dark:text-slate-200">Blog</h1>
+                                    <h3 class=" text-xl font-bold dark:text-slate-200">Company</h3>
+                                    <h4 class=" text-xl font-bold mt-3 dark:text-slate-200">Contact</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- button-->
+                        <div class=" space-x-2 flex items-center">
+                            
+                            <div class=" hidden md:block lg:block space-x-3">
+                                <span class=" dark:text-slate-200">Sign in</span>
+                                <button class="px-3 py-2 bg-[#131442] rounded-full text-slate-100 font-semibold">Get started <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                            <!-- dark-mode -->   
+                            <div class=" flex items-center justify-center scale-75">
+                                <button id="dark-switch" onclick="toggleTheme()" class="shadow w-[72px] flex items-center transition duration-200 rounded-full m-5 bg-slate-800 p-1">
+                                    <div id="dark-switch-icon" class="bg-slate-50 w-8 h-8 rounded-full transform transition duration-200 flex justify-center items-center">
+                                        <i class="fa-regular fa-sun"></i>
+                                    </div>
+                                    <h6 id="dark-text" class="text-slate-200 dark:text-slate-900 translate-x-1">FF</h6>
+                                </button>
+                                <div class="lg:hidden mobile-open dark:text-slate-200">
+                                    <i class="fa-solid fa-bars text-2xl "></i>
+                                </div>
+                                <!-- <h1 id="dark-text-change" class="text-center text-3xl font-bold dark:text-slate-200">light</h1> -->
+                            </div>
+                            <!-- menu bar -->
+                            
+                        </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <!-- hero -->
+        <div class="">
+                <div class="nav-ani z-10 animate__animated flex items-center container mx-auto lg:px-32 px-5 justify-between py-3 ">
+                    <h1 class=" text-slate-700 text-lg font-semibold dark:text-slate-400">Pricing</h1>
+                    <div>
+                        <button class="bg-slate-900 text-slate-100  font-semibold py-1 px-2 rounded-full">contact sales<i class="fa-solid fa-arrow-right ml-1"></i></button>
+                    </div>
+                </div>
+                <div class=" text-center space-y-5 container mx-auto lg:px-32 px-5 mt-20">
+                    <span class="item text-slate-600 font-semibold text-lg dark:text-slate-300">IONIC PLATFORM PRICING</span>
+                    <h1 class="item text-slate-900 font-bold text-6xl dark:text-slate-200">Pick a plan that’s right for you.</h1>
+                    <p class="item text-2xl font-semibold text-slate-600 max-w-2xl mx-auto dark:text-slate-400">Enterprise-grade cloud and native packages that enhance Ionic application functionality and security.</p>
+                </div>
+        </div>
+
+        <!-- pricing -->
+        <div id="native" class="container mx-auto lg:px-28 px-5 mt-40">
+             <div class=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10">
+
+                   <!-- card one -->
+                   <div class="item border-2 rounded-3xl px-5 py-5">
+                         <div class=" space-y-4 mb-5">
+                            <h1 class=" text-3xl font-bold dark:text-slate-100">Basic</h1>
+                            <p class="text-sm font-semibold text-slate-700 max-w-sm dark:text-slate-400">Powerful cloud services to help you ship faster and update your apps in real time.</p>
+                         </div>
+                         <div class="space-y-3 mb-10">
+                             <span class=" text-base font-semibold dark:text-slate-300">Starting at</span>
+                             <h1 class=" text-3xl font-bold dark:text-slate-300">$499/mo</h1>
+                         </div>
+                         <div>
+                               <h1 class="text-base font-semibold mb-5 dark:text-slate-400">Cloud app delivery with <span class="text-blue-600">Appflow</span></h1>
+                               <ul class=" space-y-3">
+                                   <li class=" space-x-2">
+                                       <i class="fa-solid fa-check text-sm dark:text-slate-400"></i>
+                                       <span class=" text-sm font-semibold text-slate-500 dark:text-slate-400">Cloud native app builds</span>
+                                   </li>
+                                   <li class=" space-x-2">
+                                    <i class="fa-solid fa-check text-sm dark:text-slate-400"></i>
+                                    <span class=" text-sm font-semibold text-slate-500">Live Updates (starting at 25,000/mo)</span>
+                                    </li>
+                                    <li class=" space-x-2">
+                                        <i class="fa-solid fa-check text-sm dark:text-slate-400"></i>
+                                        <span class=" text-sm font-semibold text-slate-500 dark:text-slate-400">Push to app stores</span>
+                                    </li>
+                                    <li class=" space-x-2">
+                                        <i class="fa-solid fa-check text-sm dark:text-slate-400"></i>
+                                        <span class=" text-sm font-semibold text-slate-500 dark:text-slate-400">Built-in workflow automation</span>
+                                    </li>
+                                    <li class=" space-x-2">
+                                        <i class="fa-solid fa-check text-sm dark:text-slate-400"></i>
+                                        <span class=" text-sm font-semibold text-slate-500 dark:text-slate-400">Native Builds with iOS Enterprise Certs</span>
+                                    </li>
+                                    <li class=" space-x-2">
+                                        <i class="fa-solid fa-check text-sm dark:text-slate-400"></i>
+                                        <span class=" text-sm font-semibold text-slate-500 dark:text-slate-400">Includes five (5) seats</span>
+                                    </li>
+                               </ul>
+                         </div>
+                         <div class=" mt-10">
+                            <h1 class="text-base font-semibold mb-5 dark:text-slate-300">Basic support</h1>
+                            <ul class=" space-y-3">
+                                <li class=" space-x-2">
+                                    <i class="fa-solid fa-check text-sm dark:text-slate-400"></i>
+                                    <span class=" text-sm font-semibold text-slate-500 dark:text-slate-400">Helpdesk ticketing</span>
+                                </li>
+                                <li class=" space-x-2">
+                                    <i class="fa-solid fa-check text-sm dark:text-slate-400"></i>
+                                    <span class=" text-sm font-semibold text-slate-500 dark:text-slate-400">Issue resolution</span>
+                                 </li>
+                            </ul>
+                        </div>
+                        <div class="mt-80">
+                             <button class=" lg:px-28 px-20 py-5 bg-blue-600 text-slate-200 font-semibold rounded-xl">Start your trail -></button>
+                        </div>
+                   </div>
+
+                   <!-- card two-->
+                   <div class="item border-2 rounded-3xl px-5 py-5">
+                            <div class=" space-y-4 mb-5">
+                                <h1 class=" text-3xl font-bold dark:text-slate-200">Standard</h1>
+                                <p class="text-sm font-semibold text-slate-700 max-w-sm dark:text-slate-400">Combine the best of our cloud and native solutions for faster development.</p>
+                            </div>
+                            <div class="space-y-3 mb-10">
+                                <span class=" text-base font-semibold dark:text-slate-300">Starting at</span>
+                                <h1 class=" text-3xl font-bold dark:text-slate-300">$2499/mo</h1>
+                            </div>
+                            <div>
+                                <h1 class="text-base font-semibold mb-5 dark:text-slate-400">Cloud app delivery with <span class="text-blue-600">Appflow</span></h1>
+                                <ul class=" space-y-3">
+                                    <li class=" space-x-2">
+                                        <i class="fa-solid fa-arrow-left dark:text-slate-400"></i>
+                                        <span class=" text-sm font-semibold text-slate-500 dark:text-slate-400">Everything included in Basic, plus:</span>
+                                    </li>
+                                    <li class=" space-x-2">
+                                    <i class="fa-solid fa-check text-sm dark:text-slate-400"></i>
+                                    <span class=" text-sm font-semibold text-slate-500 dark:text-slate-400">Integrate with CI/CD tools</span>
+                                    </li>
+                                    <li class=" space-x-2">
+                                        <i class="fa-solid fa-check text-sm dark:text-slate-400"></i>
+                                        <span class=" text-sm font-semibold text-slate-500 dark:text-slate-400">Control access with SSO & Permissions</span>
+                                    </li>
+                                    <li class=" space-x-2 items-center flex">
+                                        <i class="fa-solid fa-check text-sm dark:text-slate-400"></i>
+                                        <span class=" text-sm font-semibold text-slate-500 dark:text-slate-400 ">Use with GitLab Self-Managed, Bitbucket Server, and Azure DevOps</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class=" mt-10">
+                                <h1 class="text-base font-semibold mb-5 dark:text-slate-400">Native solutions access</h1>
+                                <ul class=" space-y-3">
+                                    <li class=" space-x-2 flex items-center">
+                                        <i class="fa-solid fa-check text-sm dark:text-slate-400 "></i>
+                                        <span class=" text-sm font-semibold text-slate-500 dark:text-slate-400 ">Advanced biometrics with <span class=" text-blue-600 font-bold">Identity Vault</span></span>
+                                     </li>
+                                    <li class=" space-x-2 flex items-center">
+                                        <i class="fa-solid fa-check text-sm dark:text-slate-400 "></i>
+                                        <span class=" text-sm font-semibold text-slate-500 dark:text-slate-400 ">Mobile SSO integration with <span class=" text-blue-600 font-bold"> Auth Connect</span></span>
+                                        </li>
+                                        <li class=" space-x-2 flex items-center">
+                                            <i class="fa-solid fa-check text-sm dark:text-slate-400 "></i>
+                                            <span class=" text-sm font-semibold text-slate-500 dark:text-slate-400 ">Powerful protection with <span class=" text-blue-600 font-bold">Secure Storage</span></span>
+                                        </li>
+                                </ul>
+                            </div>
+                            <div class=" mt-10">
+                                <h1 class="text-base font-semibold mb-5 dark:text-slate-400">Enterprise support</h1>
+                                <ul class=" space-y-3">
+                                    <li class=" space-x-2">
+                                    <i class="fa-solid fa-arrow-left dark:text-slate-400"></i>
+                                        <span class=" text-sm font-semibold text-slate-500 dark:text-slate-400">Everything included in Basic, plus:</span>
+                                    </li>
+                                    <li class=" space-x-2">
+                                    <i class="fa-solid fa-check text-sm dark:text-slate-400"></i>
+                                    <span class=" text-sm font-semibold text-slate-500 dark:text-slate-400">Dedicated Customer Success Manager</span>
+                                    </li>
+                                    <li class=" space-x-2">
+                                        <i class="fa-solid fa-check text-sm dark:text-slate-400"></i>
+                                        <span class=" text-sm font-semibold text-slate-500 dark:text-slate-400">Roadmap access & influence</span>
+                                    </li>
+                                    <li class=" space-x-2">
+                                        <i class="fa-solid fa-check text-sm dark:text-slate-400"></i>
+                                        <span class=" text-sm font-semibold text-slate-500 dark:text-slate-400">Business reviews</span>
+                                    </li>
+                                    <li class=" space-x-2">
+                                        <i class="fa-solid fa-check text-sm dark:text-slate-400"></i>
+                                        <span class=" text-sm font-semibold text-slate-500 dark:text-slate-400">Product onboarding</span>
+                                    </li>
+                                    <li class=" space-x-2 flex items-center">
+                                        <i class="fa-solid fa-check text-sm dark:text-slate-400"></i>
+                                        <span class=" text-sm font-semibold text-slate-500 dark:text-slate-400">Implementation & integration assistance</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class=" mt-20">
+                                    <button class=" lg:px-28 px-24 py-5 bg-blue-600 text-slate-200 font-semibold rounded-xl">Buy Now -></button>
+                            </div>
+                   </div>
+
+                   <!-- card three-->
+                   <div class="item border-2 rounded-3xl px-8 py-5 bg-[#222d3a]">
+                            <div class=" space-y-4 mb-5">
+                            <h1 class=" text-3xl font-bold text-slate-100">Enterprise</h1>
+                            <p class="text-sm font-semibold  max-w-sm text-slate-100">For teams building mission-critical apps. Access the entire Ionic Enterprise Platform.</p>
+                            </div>
+                            <div class="space-y-3 mb-10">
+                                <span class=" text-base font-semibold text-slate-200">Custom pricing</span>
+                                <h1 class=" text-3xl font-bold text-slate-200">Contact us</h1>
+                            </div>
+                            <div>
+                                <h1 class="text-base font-semibold mb-5 text-slate-300">Cloud app delivery with <span class="text-blue-600">Appflow</span></h1>
+                                <ul class=" space-y-3">
+                                    <li class=" space-x-2 flex items-center">
+                                        <i class="fa-solid fa-arrow-left text-slate-300"></i>
+                                        <span class=" text-sm font-semibold text-slate-300">Everything included in Standard</span>
+                                    </li>
+                                    <li class=" space-x-2 flex items-center">
+                                    <i class="fa-solid fa-check text-sm text-slate-300"></i>
+                                    <span class=" text-sm font-semibold text-slate-300">Payment collection with Ionic Payments</span>
+                                    </li>
+                                    <li class=" space-x-2 flex items-center">
+                                        <i class="fa-solid fa-check text-sm text-slate-300"></i>
+                                        <span class=" text-sm font-semibold text-slate-300">Access to Official Integrations library</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class=" mt-10">
+                                    <h1 class="text-base font-semibold mb-5 text-slate-100">Enterprise Premier support</h1>
+                                    <ul class=" space-y-3">
+                                        <li class=" space-x-2 flex items-center">
+                                            <i class="fa-solid fa-check text-sm text-slate-300"></i>
+                                            <span class=" text-sm font-semibold  text-slate-300">Everything included in Standard, plus:</span>
+                                        </li>
+                                        <li class=" space-x-2 flex items-center">
+                                            <i class="fa-solid fa-check text-sm text-slate-300"></i>
+                                            <span class=" text-sm font-semibold  text-slate-300">Priority hot fixes for Ionic OSS software</span>
+                                        </li>
+                                        <li class=" space-x-2 flex items-center">
+                                                <i class="fa-solid fa-check text-sm text-slate-300"></i>
+                                                <span class=" text-sm font-semibold t text-slate-300">Dedicated Solutions Architect</span>
+                                        </li>
+                                        <li class=" space-x-2 flex items-center">
+                                                <i class="fa-solid fa-check text-sm text-slate-300"></i>
+                                                <span class=" text-sm font-semibold  text-slate-300">Guaranteed response SLA</span>
+                                        </li>
+                                        <li class=" space-x-2 flex items-center">
+                                                <i class="fa-solid fa-check text-sm text-slate-300"></i>
+                                                <span class=" text-sm font-semibold text-slate-300">Quarterly business reviews</span>
+                                        </li>
+                                    </ul>
+                            </div>
+                            <div class=" mt-10">
+                                <h1 class="text-base font-semibold mb-5 text-slate-100">Expert services from Ionic Advisory team</h1>
+                                <ul class=" space-y-3">
+                                    <li class=" space-x-2 flex items-center">
+                                        <i class="fa-solid fa-arrow-left text-slate-300"></i>
+                                        <span class=" text-sm font-semibold  text-slate-300">Direct access to Ionic engineers & experts</span>
+                                    </li>
+                                    <li class=" space-x-2 flex items-center">
+                                    <i class="fa-solid fa-check text-sm text-slate-300"></i>
+                                    <span class=" text-sm font-semibold  text-slate-300">Architecture, code, and UX/UI reviews</span>
+                                    </li>
+                                    <li class=" space-x-2 flex items-center">
+                                        <i class="fa-solid fa-check text-sm text-slate-300"></i>
+                                        <span class=" text-sm font-semibold text-slate-300">Team trainings</span>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div class=" mt-48">
+                                    <button class=" lg:px-28 px-20 py-5 bg-blue-600 text-slate-200 font-semibold rounded-xl">Buy Now -></button>
+                            </div>
+                   </div>
+             </div>
+        </div>
+
+        <div class=" container mx-auto lg:px-32 px-5 mb-40 mt-20">
+                <div class=" grid lg:grid-cols-2 md:grid-cols-1 gap-12">
+                        <div class="item border-2 rounded-2xl px-8 py-8">
+                            <div class=" mb-8 space-y-3">
+                                <h1 class=" text-3xl font-bold dark:text-slate-100">Indies and Startups</h1>
+                                <p class=" text-sm font-medium max-w-lg dark:text-slate-400">Discounts are available for individuals or small start-ups with annual revenue or funding within certain specified limits.</p>
+                            </div>
+                            <div class=" flex items-center justify-between">
+                                <div>
+                                    <span class=" text-lg font-bold dark:text-slate-300">Starting at</span>
+                                    <h1 class=" text-3xl font-bold dark:text-slate-300">$49/mo</h1>
+                                </div>
+                                <div>
+                                    <button class=" bg-blue-500 px-4 py-2 rounded-full text-slate-200 text-base font-semibold">Learn more <i class="fa-solid fa-arrow-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item bg-[#f6f8fc] rounded-2xl px-8 py-8">
+                            <div class=" mb-8 space-y-3">
+                                    <h1 class=" text-3xl font-bold">Have a complex use case?</h1>
+                                    <p class=" text-sm font-medium max-w-lg">No problem. Our App Strategists will make sure your company is set up for success from day one.</p>
+                            </div>
+                            <div>
+                                <button class=" bg-blue-500 px-4 py-2 rounded-full text-slate-200 text-base font-semibold">Talk to an expert <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                </div>
+        </div>
+
+        <!-- logo -->
+        <div class="container mx-auto lg:px-32 px-5 py-20 mb-40">
+            <div class="grid lg:grid-cols-11 md:grid-cols-6 grid-cols-3 items-center justify-center lg:space-x-20 gap-10 mb-20">
+                <img class="item w-8 dark:bg-slate-300 " src="/assets/images/animation1.png" alt="">
+                <img class="item w-8 dark:bg-slate-300 " src="/assets/images/animation2.png" alt="">
+                <img class="item w-8 dark:bg-slate-300 " src="/assets/images/animation3.webp" alt="">
+                <img class="item w-8 dark:bg-slate-300 " src="/assets/images/animation4.png" alt="">
+                <img class="item w-8 dark:bg-slate-300 " src="/assets/images/animation5.png" alt="">
+                <img class="item w-8 dark:bg-slate-300 " src="/assets/images/animation7.png" alt="">
+                <img class="item w-8 dark:bg-slate-300 " src="/assets/images/animation8.png" alt="">
+                <img class="item w-8 dark:bg-slate-300 " src="/assets/images/animation9.png" alt="">
+                <img class="item w-8 dark:bg-slate-300 " src="/assets/images/animation10.png" alt="">
+                <img class="item w-8 dark:bg-slate-300 " src="/assets/images/animation11.png" alt="">
+                <img class="item w-8 dark:bg-slate-300 " src="/assets/images/animation12.png" alt="">
+            </div>
+            <div class="relative">
+                 <div class=" bg-[#00ad34] lg:w-[800px] md:w-[500px] lg:h-[500px] rounded-3xl">
+                    <div class=" lg:px-10 px-5 py-10 space-y-10 item">
+                        <img src="/assets/images/logo-hr-block-light.png" alt="">
+                        <p class=" lg:max-w-md max-w-sm text-slate-200 lg:text-xl md:text-lg font-semibold">We didn’t want to maintain separate pipelines for native mobile apps and web apps. We wanted that cross-platform experience so we looked at Ionic. We’re able to use our existing code structure, port everything over, and take advantage of that.</p>
+                        <div class="space-x-8">
+                            <span class=" text-slate-100 font-bold lg:text-lg text-base">Nick Trower </span> 
+                            <span class=" text-slate-700 font-bold lg:text-lg text-base">Solutions Architect</span>
+                        </div>
+                    </div>
+
+                 </div>
+                  <div class=" lg:block md:block hidden">
+                       <img class=" lg:w-[500px] md:w-[350px] absolute top-14 lg:left-[700px] md:left-[400px]" src="/assets/images/_ionic-io-enterprise-quote-1.png" alt="">
+                  </div>
+            </div>
+        </div>
+
+        <!-- table -->
+        <div class="lg:px-0 md:px-0 px-5 mb-40">
+              <h1 class=" text-6xl font-bold text-center dark:text-slate-100 item">Plan Details</h1>
+              <div>
+                   <table class="tabble-auto item">
+                         <thead> 
+                               <tr class="">
+                                    <td class="lg:text-2xl md:text-lg font-bold lg:px-32 md:px-10 dark:text-slate-100"><h1>Features</h1></td>
+                                    <td class=" lg:px-32">
+                                        <h1 class=" lg:text-2xl font-bold dark:text-slate-100 md:text-sm">Basic</h1>
+                                        <span class="dark:text-slate-200 md:text-sm">$499/mo</span>
+                                    </td>
+                                    <td class=" py-20 lg:px-32">
+                                        <h1 class=" lg:text-2xl font-bold dark:text-slate-100 md:text-sm">Standard</h1>
+                                        <span class="dark:text-slate-200 md:text-sm">$2499/mo</span>
+                                    </td>
+                                    <td class="py-20 lg:px-32">
+                                        <h1 class=" lg:text-2xl font-bold dark:text-slate-100 md:text-sm">Enterprise</h1>
+                                        <span class="dark:text-slate-200 md:text-sm">Custom</span>
+                                    </td>
+                               </tr>
+                         </thead>
+
+                         <tbody>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5">
+                                        <h1 class=" text-base font-bold dark:text-slate-200">Cloude Features</h1>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 md:text-sm py-5 text-slate-400 font-medium">Native Builds</td>
+                                    <td class="lg:px-32 md:px-4 md:text-sm py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                    <td class="lg:px-32 md:px-4 md:text-sm py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                    <td class="lg:px-32 md:px-4 md:text-sm py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 md:text-sm py-5 text-slate-400 font-medium">Web Previews</td>
+                                    <td class="lg:px-32 md:px-4 md:text-sm py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                    <td class="lg:px-32 md:px-4 md:text-sm py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                    <td class="lg:px-32 md:px-4 md:text-sm py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 md:text-sm py-5 text-slate-400 font">App Store Publishing</td>
+                                    <td class="lg:px-32 md:px-4 md:text-sm py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                    <td class="lg:px-32 md:px-4 md:text-sm py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                    <td class="lg:px-32 md:px-4 md:text-sm py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 md:text-sm py-5 text-slate-400 font">Live Updates</td>
+                                    <td class="lg:px-32 md:px-4 md:text-sm py-5 font-bold dark:text-slate-400">25,000/mo</td>
+                                    <td class="lg:px-32 md:px-4 md:text-sm py-5 font-bold dark:text-slate-400">25,000/mo</td>
+                                    <td class="lg:px-32 md:px-4 md:text-sm py-5 font-bold dark:text-slate-400">Custom</td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 md:text-sm py-5 text-slate-400 font">Built-In Automations</td>
+                                    <td class="lg:px-32 md:px-4 md:text-sm py-5 font-bold text-base dark:text-slate-400">4</td>
+                                    <td class="lg:px-32 md:px-4 md:text-sm py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                    <td class="lg:px-32 md:px-4 md:text-sm py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 text-slate-400 font">iOS Enterprise Certs</td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 text-slate-400 font">User Permissions</td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 md:tex-sm py-5 text-slate-400 font">CI/CD Integration with <span class=" text-blue-600">Cloud CLI</span></td>
+                                    <td class="lg:px-32 md:px-4 md:tex-sm py-5"></td>
+                                    <td class="lg:px-32 md:px-4 md:tex-sm py-5"><i class="fa-solid fa-check dark:text-slate-200"></i></td>
+                                    <td class="lg:px-32 md:px-4 md:tex-sm py-5"><i class="fa-solid fa-check dark:text-slate-200"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 text-slate-400 font">GitLab Self-Managed Support</td>
+                                    <td class="lg:px-32 md:px-4 py-5"></td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 text-slate-400 font">Bitbucket Server Support</td>
+                                    <td class="lg:px-32 md:px-4 py-5"></td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 text-slate-400 font">Azure DevOps Support</td>
+                                    <td class="lg:px-32 md:px-4 py-5"></td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 text-slate-400 ">Single Sign-On</td>
+                                    <td class="lg:px-32 md:px-4 py-5"></td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 text-slate-400 font-bold">Environment Variables</td>
+                                    <td class="lg:px-32 md:px-4 py-5 font-bold dark:text-slate-400">3</td>
+                                    <td class="lg:px-32 md:px-4 py-5 font-bold dark:text-slate-400">100</td>
+                                    <td class="lg:px-32 md:px-4 py-5 font-bold dark:text-slate-400">Custom</td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 text-slate-400 ">Native Configs</td>
+                                    <td class="lg:px-32 md:px-4 py-5 font-bold dark:text-slate-400">3</td>
+                                    <td class="lg:px-32 md:px-4 py-5 font-bold dark:text-slate-400">100</td>
+                                    <td class="lg:px-32 md:px-4 py-5 font-bold dark:text-slate-400">Custom</td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 text-slate-400 ">Concurrent Builds</td>
+                                    <td class="lg:px-32 md:px-4 py-5 font-bold dark:text-slate-400">2</td>
+                                    <td class="lg:px-32 md:px-4 py-5 font-bold dark:text-slate-400">2</td>
+                                    <td class="lg:px-32 md:px-4 py-5 font-bold dark:text-slate-400">Custom</td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 text-slate-400 ">Seats Included</td>
+                                    <td class="lg:px-32 md:px-4 py-5 font-bold dark:text-slate-400">5</td>
+                                    <td class="lg:px-32 md:px-4 py-5 font-bold dark:text-slate-400">5</td>
+                                    <td class="lg:px-32 md:px-4 py-5 font-bold dark:text-slate-400">Custom</td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 ext-base font-bold dark:text-slate-100">Premier Plugins & Solutions</td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 text-slate-400 ">Secure biometrics with <span class=" text-blue-500">Identity Vault</span> </td>
+                                    <td class="lg:px-32 md:px-4 py-5 font-bold"></td>
+                                    <td class="lg:px-20 md:px-4 py-5 dark:text-slate-400">Single app license</td>
+                                    <td class="lg:px-32 md:px-4 py-5 font-bold"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                </tr>
+                                
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 text-slate-400 ">Single sign-on via <span class=" text-blue-500">Auth Connect</span> </td>
+                                    <td class="lg:px-32 md:px-4 py-5 font-bold"></td>
+                                    <td class="lg:px-20 md:px-4 py-5  dark:text-slate-400">Single app license</td>
+                                    <td class="lg:px-32 md:px-4 py-5 font-bold"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 text-slate-400 ">Ultra-fast <span class=" text-blue-500">Secure Storaget</span> </td>
+                                    <td class="lg:px-32 md:px-4 py-5 font-bold"></td>
+                                    <td class="lg:px-20 md:px-4 py-5  dark:text-slate-400">Single app license</td>
+                                    <td class="lg:px-32 md:px-4 py-5 font-bold"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 text-slate-400 ">Mobile payment collection with Payments</td>
+                                    <td class="lg:px-32 md:px-4 py-5 font-bold"></td>
+                                    <td class="lg:px-20 md:px-4 py-5 font-bold"></td>
+                                    <td class="lg:px-32 md:px-4 py-5 font-bold"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 text-slate-400 ">Access to Official 3rd-Party Integrations</td>
+                                    <td class="lg:px-32 md:px-4 py-5 font-bold"></td>
+                                    <td class="lg:px-20 md:px-4 py-5 font-bold"></td>
+                                    <td class="lg:px-32 md:px-4 py-5 font-bold"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="font-bold lg:px-32 md:px-10 py-5 text-xl dark:text-slate-200">Support</td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 text-slate-400 font-medium">Community support on the <span class="text-blue-500">Ionic Forum</span></td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 text-slate-400 font-medium">Helpdesk Ticketing</td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 text-slate-400 font-medium">Issue Resolution</td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 text-slate-400 font-medium">Customer Success Manager</td>
+                                    <td class="lg:px-32 md:px-4 py-5"></td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa- dark:text-slate-400"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 text-slate-400 font-medium">Onboarding Assistance</td>
+                                    <td class="lg:px-32 md:px-4 py-5"></td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 text-slate-400 font-medium">Dedicated Solutions Architect</td>
+                                    <td class="lg:px-32 md:px-4 py-5"></td>
+                                    <td class="lg:px-32 md:px-4 py-5"></td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 text-slate-400 font-medium">OSS Priority Hotfixes</td>
+                                    <td class="lg:px-32 md:px-4 py-5"></td>
+                                    <td class="lg:px-32 md:px-4 py-5"></td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 text-slate-400 font-medium">Guaranteed Response SLA</td>
+                                    <td class="lg:px-32 md:px-4 py-5"></td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 text-slate-400 font-medium">Periodic Business Reviews</td>
+                                    <td class="lg:px-32 md:px-4 py-5"></td>
+                                    <td class="lg:px-20 md:px-4 py-5  dark:text-slate-400">Semi-Annual</td>
+                                    <td class="lg:px-32 md:px-4 py-5  dark:text-slate-400">Quarterly</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-bold text-xl lg:px-32 md:px-10 py-5d dark:text-slate-100">Advisory</td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 text-slate-400 font-medium">Architecture Reviews</td>
+                                    <td class="lg:px-32 md:px-4 py-5"></td>
+                                    <td class="lg:px-32 md:px-4 py-5"></td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 text-slate-400 font-medium">UI/UX Audits</td>
+                                    <td class="lg:px-32 md:px-4 py-5"></td>
+                                    <td class="lg:px-20 md:px-4 py-5"></td>
+                                    <td class="lg:px-32 md:px-4 py-5 font-semibold"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 text-slate-400 font-medium">Code Reviews</td>
+                                    <td class="lg:px-32 md:px-4 py-5"></td>
+                                    <td class="lg:px-32 md:px-4 py-5"></td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 text-slate-400 font-medium">App Building Advice & Guidance</td>
+                                    <td class="lg:px-32 md:px-4 py-5"></td>
+                                    <td class="lg:px-20 md:px-4 py-5"></td>
+                                    <td class="lg:px-32 md:px-4 py-5 font-semibold"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 text-slate-400 font-medium">Code Reviews</td>
+                                    <td class="lg:px-32 md:px-4 py-5"></td>
+                                    <td class="lg:px-32 md:px-4 py-5"></td>
+                                    <td class="lg:px-32 md:px-4 py-5"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 text-slate-400 font-medium">Security & Performance Audits</td>
+                                    <td class="lg:px-32 md:px-4 py-5"></td>
+                                    <td class="lg:px-20 md:px-4 py-5"></td>
+                                    <td class="lg:px-32 md:px-4 py-5 font-semibold"><i class="fa-solid fa-check dark:text-slate-400"></i></td>
+                                </tr>
+                                <tr>
+                                    <td class="lg:px-32 md:px-10 py-5 text-slate-400 font-medium">Team Trainings</td>
+                                    <td class="lg:px-32 md:px-4 py-5"></td>
+                                    <td class="lg:px-32 md:px-4 py-5"></td>
+                                    <td class="lg:px-32 md:px-4 py-5  dark:text-slate-400">Add-on</td>
+                                </tr>
+                         </tbody>
+                   </table>
+              </div>
+        </div>
+
+        <!-- accdorin section -->
+        <div class="container mx-auto lg:lg:px-32  lg:px-5  md:px-0 px-5 py-20 ">
+             <h1 class="item  font-bold lg:text-6xl md:text-5xl text-4xl text-center mb-20 dark:text-slate-100 ">Have a question?</h1>
+             <div class="item py-5">
+                <div class="flex items-center lg:justify-center md:space-x-44 space-x-10 mb-10 accordion-brain">
+                    <h1 class="md:text-3xl font-bold dark:text-slate-100 text-xl ">What is the Community plan and who is it for?</h1>
+                    <i class="fa-solid fa-chevron-up dark:text-slate-100"></i>
+                </div>
+                <p class="lg:lg:px-52 md:px-0 mb-10 dark:text-slate-400 text-xs md:text-sm lg:text-base accordion-content">
+                    The Community plan is a deeply discounted subscription for Ionic community members who are using Ionic for personal use, or as part of a very small business or early stage startup with less than USD $500,000 in annual revenue or total funds raised. This includes students, hobbyists, entrepreneurs, and professional developers working on side projects. The Community plan may not be used by businesses with more than USD $500,000 in annual revenue. For more information, check out our dedicated Community Plan FAQ page.
+                </p>
+                <div class=" border-b-2 lg:w-[850px] border-slate-400 mx-auto">
+
+                </div>
+             </div>
+             <div class="item py-5">
+                <div class="  flex items-center lg:justify-center md:space-x-20 space-x-10 mb-10 accordion-brain">
+                    <h1 class="md:text-3xl text-xl font-bold max-w-3xl  dark:text-slate-100">Which plans include access to native solutions like Identity Vault, Auth Connect, and Secure Storage?</h1>
+                    <i class="fa-solid fa-chevron-up dark:text-slate-100"></i>
+                </div>
+                <p class="lg:px-52 mb-10 dark:text-slate-400 text-xs md:text-sm lg:text-base accordion-content">
+                    The Basic plan does not include access to these solutions. The Standard plan provides access to Identity Vault, Auth Connect, and Secure Storage only, and is limited to one app per solution. If you would like to purchase additional licenses for more than one app, contact our Sales team to customize your plan. The Enterprise plan includes access to all of our native solutions, including Payments, and premier integrations, such as Microsoft Intune, Couchbase, and more. If you would like access to these solutions, contact our team about purchasing an Enterprise plan. Or, build your own custom plan with our custom plan builder.                </p>
+                <div class=" border-b-2 lg:w-[850px] border-slate-400 mx-auto">
+
+                </div>
+             </div>
+             <div class="item py-5">
+                <div class="flex items-center lg:justify-center md:space-x-40 space-x-10 mb-10 accordion-brain">
+                    <h1 class="md:text-3xl text-xl font-bold dark:text-slate-100">How can I use Appflow with my own CI/CD Tool?</h1>
+                    <i class="fa-solid fa-chevron-up dark:text-slate-100"></i>
+                </div>
+                <p class="lg:px-52 text-xs md:text-sm lg:text-base mb-10 dark:text-slate-400 accordion-content">
+                    For teams and businesses that wish to integrate Appflow with their existing CI/CD platform, the Standard and Enterprise plans include access to the Cloud CLI to kick off builds and deployments as steps in your own CI/CD tool. This allows you to use the powerful CI/CD tooling you already use, while offloading the complexity of mobile DevOps on to Appflow. The Cloud CLI can be installed in any CI/CD tool like Travis, Jenkins, CircleCI, Azure DevOps, Gitlab CI, BitBucket Server, etc.                </p>
+                <div class=" border-b-2 lg:w-[850px] border-slate-400 mx-auto">
+
+                </div>
+             </div>
+             <div class="item py-5">
+                <div class="flex items-center lg:justify-center lg:space-x-48 md:space-x-40 space-x-10 mb-10 accordion-brain">
+                    <h1 class="md:text-3xl text-xl font-bold dark:text-slate-100">What is the Community plan and who is it for?</h1>
+                    <i class="fa-solid fa-chevron-up dark:text-slate-100"></i>
+                </div>
+                <p class="lg:px-52 mb-10 dark:text-slate-400 text-xs md:text-sm lg:text-base accordion-content">
+                    The Community plan is a deeply discounted subscription for Ionic community members who are using Ionic for personal use, or as part of a very small business or early stage startup with less than USD $500,000 in annual revenue or total funds raised. This includes students, hobbyists, entrepreneurs, and professional developers working on side projects. The Community plan may not be used by businesses with more than USD $500,000 in annual revenue. For more information, check out our dedicated Community Plan FAQ page.
+                </p>
+                <div class=" border-b-2 lg:w-[850px] border-slate-400 mx-auto">
+
+                </div>
+             </div>
+             <div class="item py-5">
+                <div class="  flex items-center lg:justify-center lg:space-x-[370px] md:space-x-96 space-x-10 mb-10 accordion-brain">
+                    <h1 class="md:text-3xl text-xl font-bold dark:text-slate-100">How do Live Update limits scale?</h1>
+                    <i class="fa-solid fa-chevron-up dark:text-slate-100"></i>
+                </div>
+                <p class="lg:px-52 mb-10 dark:text-slate-400 text-xs md:text-sm lg:text-base accordion-content">
+                    Appflow allows you to push hot code updates directly to your users’ devices for any modifications to your web code.
+                    A single Live Update is one code update to one device. If you send one update to 200 devices, that counts as 200 Live Updates. If you send two updates to 200 devices, that counts as 400 Live Updates.
+
+                   For most customers, Live Update quantity isn't an issue. If you believe that you might need a very large quantity of updates please reach out to our Sales team to discuss the best way to scale your growth. Basic and Standard plans start at 25,000 Live Updates per month. Any further increase must be a custom package as we also take into account the size (and "shape") of your updates.
+                </p>
+                <div class=" border-b-2 lg:w-[850px] border-slate-400 mx-auto">
+
+                </div>
+             </div>
+             <div class="item py-5">
+                <div class=" flex items-center lg:justify-center lg:space-x-44 md:space-x-40 space-x-10 mb-10 accordion-brain">
+                    <h1 class="md:text-3xl text-xl font-bold max-w-2xl dark:text-slate-100">What Git providers are supported on each pricing plan?</h1>
+                    <i class="fa-solid fa-chevron-up dark:text-slate-100"></i>
+                </div>
+                <p class="lg:px-52 mb-10 dark:text-slate-400 text-xs md:text-sm lg:text-base accordion-content">
+                    Ionic supports Git-based integrations only. Cloud-hosted Git providers such as GitHub, GitLab, and Bitbucket can be used on any plan. On-premises Git services such as BitBucket Server and GitLab Self-Managed require the Standard plan and above. Azure DevOps (the cloud-hosted version) requires the Standard plan and above. Support for Azure DevOps Server - the on-premises version - is not available.
+                </p>
+                <div class=" border-b-2 lg:w-[850px] border-slate-400 mx-auto">
+
+                </div>
+             </div> 
+             <div class="item py-5">
+                <div class="flex items-center lg:justify-center lg:space-x-64 md:space-x-60 space-x-10 mb-10 accordion-brain">
+                    <h1 class="md:text-3xl text-xl font-bold dark:text-slate-100">Which plans offer iOS Enterprise builds?</h1>
+                    <i class="fa-solid fa-chevron-up dark:text-slate-100"></i>
+                </div>
+                <p class="lg:px-52 mb-10 dark:text-slate-400 text-xs md:text-sm lg:text-base accordion-content">
+                    The Basic, Standard, and Enterprise support iOS Enterprise Builds. The Apple Developer Enterprise Program allows large organizations to develop and deploy proprietary, internal-use apps to their employees. This program is for specific use cases that require private distribution directly to employees using secure internal systems or through a Mobile Device Management solution.
+                </p>
+                <div class=" border-b-2 lg:w-[850px] border-slate-400 mx-auto">
+
+                </div>
+             </div>
+             <div class="item py-5">
+                <div class=" flex items-center lg:justify-center lg:space-x-[280px] md:space-x-60 space-x-10 mb-10 accordion-brain">
+                    <h1 class="md:text-3xl text-xl font-bold dark:text-slate-100">Do you charge for Concurrency Limits?</h1>
+                    <i class="fa-solid fa-chevron-up dark:text-slate-100"></i>
+                </div>
+                <p class="lg:px-52 mb-10 dark:text-slate-400 text-xs md:text-sm lg:text-base accordion-content">
+                    Concurrency Limits refers to the number of app builds that can occur at the same time. Once you have hit your limit, additional builds will be queued until the existing builds in process are completed. You'll be given the ability to add concurrencies to your plan if this becomes an issue by contacting our Sales team.
+                </p>
+                <div class=" border-b-2 lg:w-[850px] border-slate-400 mx-auto">
+
+                </div>
+             </div>
+             <div class="item py-5">
+                <div class=" flex items-center lg:justify-center lg:space-x-80 md:space-x-60 space-x-10 mb-10 accordion-brain">
+                    <h1 class="md:text-3xl text-xl font-bold dark:text-slate-100">Do you charge for Developer Seats?</h1>
+                    <i class="fa-solid fa-chevron-up dark:text-slate-100"></i>
+                </div>
+                <p class="lg:px-52 mb-10 dark:text-slate-400 text-xs md:text-sm lg:text-base accordion-content">
+                    Our Community plan includes a solo developer license and does not support team collaboration. Basic, Standard, and Enterprise plans come with five developer seats by default. If you need more seats, please Contact Sales to discuss increasing your developer seats.
+                </p>
+                <div class=" border-b-2 lg:w-[850px] border-slate-400 mx-auto">
+
+                </div>
+             </div>
+        </div>
+
+         
+         <div class="border-b-2 mb-20">
+
+         </div>
+         <!-- footer -->
+        <footer>
+            <div class="container mx-auto px-5 lg:px-28">
+                <div class="mb-20 grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-10">
+                    <div>
+                        <img class="w-20 hidden dark:block" src="/assets/images/ionic brand kit/ionic/light logotype/ionic logotype white on black.png" alt="">
+                        <svg class=" dark:hidden" width="80" height="80" viewBox="0 0 698 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M669.427 141.898C666.143 150.728 657.949 155.628 647.824 155.628C632.797 155.628 620.616 143.451 620.616 128.43C620.616 113.409 632.797 101.232 647.824 101.232C657.95 101.232 665.892 105.55 669.428 114.963H697.177C692.581 90.8263 672.505 75.3333 647.824 75.3333C618.488 75.3333 594.707 99.1054 594.707 128.43C594.707 157.754 618.488 181.526 647.824 181.526C672.505 181.526 693.84 164.193 697.176 141.898H669.427Z" fill="black"/>
+                            <path d="M555.15 78.0007H584.042V179.649H555.15V78.0007Z" fill="black"/>
+                            <path d="M586.949 53.4355C586.949 63.0649 579.14 70.871 569.507 70.871C559.874 70.871 552.064 63.0649 552.064 53.4355C552.064 43.8061 559.874 36 569.507 36C579.14 36 586.949 43.8061 586.949 53.4355Z" fill="black"/>
+                            <path d="M472.392 90.441C477.237 81.6971 488.247 75.7277 504.103 75.7277C529.736 75.7277 543.301 92.0385 543.301 116.252V179.646H514.409V119.279C514.409 107.424 509.124 99.269 496.351 99.269C482.346 99.269 474.594 107.845 474.594 121.381V179.562H445.702V77.9978H472.392V90.441Z" fill="black"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M383.239 155.628C398.264 155.628 410.445 143.451 410.445 128.432C410.445 113.412 398.264 101.235 383.239 101.235C368.213 101.235 356.032 113.412 356.032 128.432C356.032 143.451 368.213 155.628 383.239 155.628ZM383.239 181.526C412.573 181.526 436.354 157.755 436.354 128.432C436.354 99.1082 412.573 75.337 383.239 75.337C353.904 75.337 330.124 99.1082 330.124 128.432C330.124 157.755 353.904 181.526 383.239 181.526Z" fill="black"/>
+                            <path d="M291.086 78.0007H319.978V179.649H291.086V78.0007Z" fill="black"/>
+                            <path d="M322.885 53.4355C322.885 63.0649 315.076 70.871 305.443 70.871C295.809 70.871 288 63.0649 288 53.4355C288 43.8061 295.809 36 305.443 36C315.076 36 322.885 43.8061 322.885 53.4355Z" fill="black"/>
+                            <path d="M28.8 120C28.8 69.6316 69.6316 28.8 120 28.8C140.276 28.8 158.996 35.4057 174.143 46.6017C178.116 37.2507 186.122 30.0268 195.978 27.1135C175.295 10.1784 148.828 0 120 0C53.7258 0 0 53.7258 0 120C0 186.274 53.7258 240 120 240C186.274 240 240 186.274 240 120C240 106.13 237.641 92.7867 233.296 80.3656C227.385 88.3578 218.082 93.6899 207.514 94.2366C209.912 102.396 211.2 111.039 211.2 120C211.2 170.368 170.368 211.2 120 211.2C69.6316 211.2 28.8 170.368 28.8 120Z" fill="black"/>
+                            <path d="M237.533 95.687C236.454 90.4492 235.034 85.3336 233.296 80.3655C227.385 88.3576 218.082 93.6897 207.514 94.2365C209.21 100.008 210.351 106.021 210.874 112.218C222.003 110.85 231.624 104.605 237.533 95.687Z" fill="black"/>
+                            <path d="M120 172.5C148.927 172.5 172.5 148.972 172.5 120C172.5 91.0734 148.972 67.5001 120 67.5001C91.0283 67.5001 67.5 91.0734 67.5 120C67.5 148.927 91.0733 172.5 120 172.5Z" fill="black"/>
+                            <path d="M198.75 75.0001C213.247 75.0001 225 63.2475 225 48.7501C225 34.2526 213.247 22.5001 198.75 22.5001C184.253 22.5001 172.5 34.2526 172.5 48.7501C172.5 63.2475 184.253 75.0001 198.75 75.0001Z" fill="black"/>
+                        </svg>
+                        
+                    </div>
+                    <div>
+                        <ul class="space-y-3">
+                            <span class=" text-lg font-bold dark:text-slate-300">The Platform</span>
+                            <li class=" text-sm font-semibold text-[#445b78]">Overview</li>
+                            <li class=" text-sm font-semibold text-[#445b78]">Build</li>
+                            <li class=" text-sm font-semibold text-[#445b78]">Secure</li>
+                            <li class=" text-sm font-semibold text-[#445b78]">Deliver</li>
+                            <li class=" text-sm font-semibold text-[#445b78]">Why Ionic?</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="space-y-3">
+                            <span class=" text-lg font-semibold dark:text-slate-300">Products</span>
+                            <li class=" text-sm font-semibold text-[#445b78]">Framework</li>
+                            <li class=" text-sm font-semibold text-[#445b78]">Capacitor</li>
+                            <li class=" text-sm font-semibold text-[#445b78]">Appflow</li>
+                            <li class=" text-sm font-semibold text-[#445b78]">Identity Vault</li>
+                            <li class=" text-sm font-semibold text-[#445b78]">Secure Storage</li>
+                            <li class=" text-sm font-semibold text-[#445b78]">Auth Connect</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="space-y-3">
+                            <span class=" text-lg font-semibold dark:text-slate-300">Resources</span>
+                            <li class=" text-sm font-semibold text-[#445b78]">Resource Center</li>
+                            <li class=" text-sm font-semibold text-[#445b78]">Blog</li>
+                            <li class=" text-sm font-semibold text-[#445b78]">Articles</li>
+                            <li class=" text-sm font-semibold text-[#445b78]">Webinars</li>
+                            <li class=" text-sm font-semibold text-[#445b78]">Case Studies</li>
+                            <li class=" text-sm font-semibold text-[#445b78]">Videos</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="space-y-3">
+                            <span class=" text-lg font-semibold dark:text-slate-300">Company</span>
+                            <li class=" text-sm font-semibold text-[#445b78]">About us</li>
+                            <li class=" text-sm font-semibold text-[#445b78]">Customers</li>
+                            <li class=" text-sm font-semibold text-[#445b78]">Brand</li>
+                            <li class=" text-sm font-semibold text-[#445b78]">Contact</li>
+                            <li class=" text-sm font-semibold text-[#445b78]">Careers</li>
+                            <li class=" text-sm font-semibold text-[#445b78]">Privacy</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="space-y-3">
+                            <span class=" text-lg font-semibold dark:text-slate-300">Support</span>
+                            <li class=" text-sm font-semibold text-[#445b78]">Help Center</li>
+                            <li class=" text-sm font-semibold text-[#445b78]">Partners</li>
+                            <li class=" text-sm font-semibold text-[#445b78]">Advisory</li>
+                            <li class=" text-sm font-semibold text-[#445b78]">Enterprise Guide</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mb-14">
+                    <div class=" px-3 mb-5">
+                        <div class=" border-b border-slate-500"></div>
+                    </div>
+                    <div class="flex items-center justify-between px-5">
+                        <span class=" text-xs md:text-base md:font-semibold  text-slate-900 dark:text-slate-300">Copyright © 2022 Ionic Terms Privacy</span>
+                        <div class=" flex items-center space-x-5">
+                                <i class="fa-brands fa-twitter  text-slate-900 dark:text-slate-300"></i>
+                                <i class="fa-brands fa-github  text-slate-900 dark:text-slate-300"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script>
+            const navAni = document.querySelector('.nav-ani')
+            
+            let head= document.querySelector('.head')
+                        var waypoint = new Waypoint({
+                        element: document.getElementById('native'),
+                        handler: function(direction) {
+                        if(direction === 'down'){
+                                navAni.classList.add('fixed','w-full','animate__fadeInDown','shadow-xl','top-0','bg-slate-100','dark:bg-slate-800')
+                                head.classList.add('md:hidden')
+                               
+                        }
+
+                        else
+                        {
+                                navAni.classList.remove('fixed','w-full','animate__fadeInDown','shadow-xl','top-0','bg-slate-100','dark:bg-slate-800')
+                                head.classList.remove('md:hidden')
+                                
+                        }
+                        },
+                        offset: '20%'
+                        });
+
+                        ScrollReveal().reveal('.item', {
+                                delay: 375,
+                                duration: 600,
+                                reset: true,
+                                distance: '20px',
+                                interval:300, 
+                                scale: 0.85 
+                            });
+        </script>
+
+  <script src="/src/main.js"></script>
+</body>
+</html>

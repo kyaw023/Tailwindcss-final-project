@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.mega-item {
+  @apply lg:invisible lg:opacity-0;
+}
+
+.mega:hover .mega-item {
+  @apply lg:visible lg:translate-y-1 lg:opacity-100 transition-all duration-200 delay-150;
+}
+.active-icon{
+  @apply bg-slate-900 text-white
+}
+.active-img{
+  @apply block
+}
+.active-program{
+  @apply bg-[#27354b] px-4 py-3 rounded-lg
+}
+.active-code{
+  @apply block transition-all duration-300 ease-in-out
+}
+.active-code-content{
+  @apply  block transition-all duration-300 ease-in-out
+} 
+.coder-active{
+  @apply bg-white px-4 py-2 rounded-full shadow-xl text-slate-900
+}
+
+.mega-one{
+  @apply lg:invisible lg:opacity-0;
+}
+
+.mega:hover .mega-one {
+  @apply lg:visible lg:translate-y-1 lg:opacity-100 lg:shadow-xl
+}
+
+.accordion-body {
+   @apply  max-h-0 overflow-hidden transition-all duration-200 
+}
+
+.accordion-header.active i {
+  @apply transition-all duration-200 ease-out ;transform:rotate(180deg)
+}
+.accordion-content{
+  @apply max-h-0 overflow-hidden transition-all duration-300 ease-in  delay-150
+}
+.accordion-brain.active-brain i{
+  @apply transition-all duration-200 ease-out ;transform:rotate(180deg)
+}
+
+.active-body{
+  @apply w-60;
+}
+/* .active-dropdown.active i{
+  @apply transition-all duration-200 ease-out bg-slate-500 ;transform:rotate(180deg)
+} */
+.active-circle{
+  @apply border px-4 py-2 rounded-full bg-blue-600 text-slate-100 transition-all duration-200
+}
+
+.open{
+   @apply block transition-all duration-1000
+}
+.mega-fixx {
+  @apply top-16
+}

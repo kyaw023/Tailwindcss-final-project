@@ -1,0 +1,529 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/dist/output.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="build.css"> -->
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bitter&family=Calligraffitti&family=DM+Sans&family=Libre+Baskerville&family=Libre+Franklin&family=Lora:ital@0;1&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@300;400;500;600&family=Parisienne&family=Playfair+Display&family=Quicksand:wght@300;400;600;700&family=Roboto:ital,wght@0,100;0,300;1,100&family=Silkscreen:wght@400;700&family=Slabo+27px&family=Source+Sans+Pro:ital,wght@0,200;0,600;1,200&family=Work+Sans:wght@100;400&display=swap" rel="stylesheet">
+  
+</head>
+<style>
+    *{
+        font-family: 'Lato', sans-serif;
+    }
+</style>
+<body class=" dark:bg-slate-900">
+     <div class="container mx-auto lg:px-40 px-5 py-2">
+            <div class=" flex items-center justify-between ">
+                <img class="w-20 dark:hidden block" src="/assets/images/ionic logotype black.png" alt="">
+                <img class="w-20 hidden dark:block" src="/assets/images/ionic brand kit/ionic/light logotype/ionic logotype white on blue.png" alt="">
+                <div class=" space-x-5">
+                    <span class=" text-sm dark:text-slate-300">Support</span>
+                    <span class=" text-sm dark:text-slate-300">Contact</span>
+                    <span class=" text-sm dark:text-slate-300">Login</span>
+                </div>
+                
+            </div>
+            <div class="border-b-2 mt-3">
+
+            </div>
+
+     </div>
+     <!-- nav -->
+     <div class="nav-ani animate__animated container mx-auto lg:px-40 px-5 mb-20 z-10 dark:bg-slate-800">
+        <div  class=" flex items-center justify-between">
+            <h1 class=" font-bold text-xl dark:text-slate-100">Blog</h1>
+            <div class=" menu-bar md:hidden  w-12 h-12 rounded-full border flex items-center justify-center bg-blue-500">
+               <i class="fa-solid fa-bars text-2xl text-white"></i>
+            </div>
+            <div class="fixed md:static md:top-0 md:bg-auto top-[16px] right-[16px] left-[16px]  hidden md:block bg-[#ffffff] dark:bg-slate-800 shadow-xl md:shadow-none md:rounded-none md:h-auto md:z-auto md:w-auto rounded-xl  h-screen z-10 w-[340px] menu-screen">
+               <ul class=" flex items-center space-x-10">
+                   <div class="relative hidden hover:bg-slate-200 space-x-8 md:flex items-center  w-12 h-12 rounded-full search-body transition-all duration-300 delay-300 ">
+                       <div class=" absolute md:top-3 md:left-3">
+                           <i class="fa-solid fa-magnifying-glass text-lg text-slate-600 icon-search "></i>
+                       </div>
+                       <div class="absolute md:top-3 md:left-5 ">
+                           <input class="border-none outline-none bg-transparent top-3 left-5 w-full h-full" type="text" placeholder="Search blog">
+                       </div>
+                   </div>
+                   <div class=" flex flex-col md:flex-row md:items-center md:space-x-5 space-x-0  space-y-10 md:space-y-0 py-3 md:px-0 md:py-0">
+                       <li class="text-sm z-10 text-slate-500 md:flex md:items-center space-x-1 md:relative group mega">
+                           <div class="mb-10 md:mb-0 md:flex md:items-center space-x-3">
+                               <span class=" text-xl md:text-base font-bold md:font-normal text-slate-900 md:text-slate-400"> Categories</span>
+                              <div class=" hidden md:block">
+                                 <i class="fa-solid fa-chevron-down"></i>
+                              </div>
+                           </div>
+                           <div>
+                               <ul class="md:absolute flex space-x-10 md:flex-col items-center md:space-x-0  md:top-8 md:left-0 md:bg-white dark:bg-slate-800 md:px-5 md:py-3 md:space-y-3 space-y-0 md:rounded-xl md:shadow-md mega-item">
+                                   <div class=" space-y-3">
+                                       <li class="">All</li>
+                                       <li class="">Businesses</li>
+                                       <li class="">Perspectives</li>
+                                       <li class="">Stencil</li>
+                                   </div>
+                                   <div class=" space-y-3">
+                                       <li class="">Announcement</li>
+                                       <li class="">Enginnering</li>
+                                       <li class="">Product</li>
+                                       <li class="">Tutorials</li>
+                                   </div>
+                               </ul>
+                           </div>
+                       </li>
+                       <li class=" text-sm text-slate-500 md:flex md:items-center space-x-1 md:relative group mega">
+                            <div class="dropdown mb-3 md:mb-0 md:flex md:items-center space-x-3">
+                               <span class=" text-xl text-slate-900  font-bold md:text-base md:text-slate-400 md:font-medium">Products</span>
+                               <div class="hidden md:block">
+                                   <i class="fa-solid fa-chevron-down "></i>
+                               </div>
+                            </div>
+                           <div>
+                               <ul class="md:absolute flex md:flex-col items-center md:top-8 top-auto left-auto md:left-0 bg-white dark:bg-slate-800 md:px-5 px-0  md:py-3 py-0 md:space-y-3 space-y-0 space-x-10 md:space-x-0 md:rounded-xl rounded-none shadow-none md:shadow-md mega-item dropdown-menu ">
+                                   <div class=" space-y-3">
+                                       <li class="">Appflow</li>
+                                       <li class="">Capacitor</li>
+                                   </div>
+                                   <div class=" space-y-3">
+                                       <li class="">Framework</li>
+                                       <li class="">Portals</li>
+                                   </div>
+                               </ul>
+                           </div>
+                       </li>
+                       <li class=" text-sm text-slate-500">RSS</li>
+                   </div>
+                   <!-- dark-mode -->   
+                    <div class=" flex items-center justify-center scale-75">
+                        <button id="dark-switch" onclick="toggleTheme()" class="shadow w-[72px] flex items-center transition duration-200 rounded-full m-5 bg-slate-800 p-1">
+                            <div id="dark-switch-icon" class="bg-slate-50 w-8 h-8 rounded-full transform transition duration-200 flex justify-center items-center">
+                                <i class="fa-regular fa-sun"></i>
+                            </div>
+                            <h6 id="dark-text" class="text-slate-200 dark:text-slate-900 translate-x-1">FF</h6>
+                        </button>
+                        <div class="lg:hidden mobile-open dark:text-slate-200">
+                            <i class="fa-solid fa-bars text-2xl "></i>
+                        </div>
+                        <!-- <h1 id="dark-text-change" class="text-center text-3xl font-bold dark:text-slate-200">light</h1> -->
+                    </div>
+               </ul>
+               <div class=" menu-close absolute top-5 right-5 w-10 h-10 rounded-full border flex items-center justify-center bg-blue-500 md:hidden">
+                   <i class="fa-solid fa-xmark text-white"></i>
+               </div>
+            </div>
+            
+       </div>
+     </div>
+
+     <!-- hero section -->
+     <div id="native" class=" container mx-auto lg:px-40 md:py-20 px-5">
+            <div class=" flex md:flex-row flex-col items-center justify-between ">
+                <h1 class="md:text-4xl text-2xl font-bold mb-5 item dark:text-slate-100">The Latest from Ionic</h1>
+                <div class="border-2 md:w-96 w-80 h-12 px-3 rounded-xl flex items-center md:space-x-8 item">
+                    <i class="fa-regular fa-envelope text-slate-400 text-2xl"></i>
+                    <input class=" outline-none border-none px-2 py-2 dark:bg-slate-900 dark:text-slate-200" type="text" placeholder=" your@email">
+                    <button class="bg-slate-200  px-3 py-2 rounded-xl text-slate-400">subscribe</button>
+                </div>
+            </div>
+            <div class=" mt-10 relative item">
+                <img class=" rounded-3xl lg:h-[600px] md:h-[450px] w-[2000px]" src="/assets/images/blog-bg.png" alt="">
+                <div class=" md:absolute static md:top-20 md:left-20 left-0 top-0 space-y-8">
+                     <span class=" md:text-slate-100 text-slate-800 text-xs md:text-base">December 6,2022 | All | Products | micro frontends | Portals</span>
+                     <h2 class=" md:text-slate-100 text-slate-800 font-bold md:text-5xl text-3xl">Mobile micro frontends are revolutionizing app development</h2>
+                     <div class=" flex items-center space-x-3">
+                         <img class="w-14 h-14 rounded-full" src="/assets/images/christine-perez-150x150.png" alt="">
+                         <div>
+                            <h1 class=" text-xl font-semibold md:text-slate-100 text-slate-800">Christine Perez</h1>
+                            <span class=" text-slate-400">Product Marketing Manager</span>
+                         </div>
+                     </div>
+                </div>
+            </div>
+            <div class=" md:mt-20 mt-40 grid lg:grid-cols-2 md:grid-cols-2 gap-10">
+                 <div class=" item">
+                    <img class=" lg:w-[600px] lg:h-[300px] md:h-[250px] rounded-3xl hover:scale-105 hover:opacity-75 transition duration-200" src="/assets/images/sdk-feature-image.png" alt="">
+                    <div class=" mt-5 mb-5 flex items-center space-x-3">
+                        <span class=" lg:text-sm text-xs text-slate-400">December 1,2022 |</span>
+                        <span class=" lg:text-sm text-xs text-slate-400">Product |</span>
+                        <span class=" lg:text-sm text-xs text-slate-400">Ionic enterprise SDK</span>
+                    </div>
+                    <div>
+                        <h1 class=" text-3xl font-bold max-w-xl dark:text-slate-100">Ionic Enterprise SDK: The cross- platform mobile SDK for every enterprise</h1>
+                        <div class=" flex items-center space-x-3 mt-5">
+                             <img class=" w-10 h-10 rounded-full" src="/assets/images/conner150x150.jpg" alt="">
+                             <div>
+                                <h1 class=" font-bold dark:text-slate-200">Conner Simmons</h1>
+                                <span class=" text-xs font-semibold text-slate-400">Product Marketing Manager</span>
+                             </div>
+                        </div>
+                    </div>
+                 </div>
+                 <div class=" item">
+                    <img class=" lg:w-[600px] lg:h-[300px] md:h-[250px] rounded-3xl hover:scale-105 hover:opacity-75 transition duration-200" src="/assets/images/mobilesecurity1-feature-image.png" alt="">
+                    <div class=" mt-5 mb-5 flex items-center space-x-3">
+                        <span class=" lg:text-sm text-xs text-slate-400">November 29,2022 |</span>
+                        <span class=" lg:text-sm text-xs text-slate-400">Perspectives |</span>
+                        <span class=" lg:text-sm text-xs text-slate-400">Ionic enterprise SDK</span>
+                    </div>
+                    <div>
+                        <h1 class=" text-3xl font-bold  dark:text-slate-100">Top Attaclk Vectors for mobile Threats</h1>
+                        <div class=" flex items-center space-x-3 mt-5">
+                             <img class=" w-10 h-10 rounded-full" src="/assets/images/conner150x150.jpg" alt="">
+                             <div>
+                                <h1 class=" font-bold dark:text-slate-200">Conner Simmons</h1>
+                                <span class=" text-xs font-semibold text-slate-400">Product Marketing Manager</span>
+                             </div>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+            <div class=" mt-20 item">
+                 <div class=" flex lg:flex-row md:flex-col flex-col space-y-5 md:space-y-5 lg:space-y-0 items-center justify-between border border-slate-500 px-10 py-10 rounded-2xl">
+                    <h1 class=" md:text-4xl text-2xl font-bold dark:text-slate-200"> <span class=" text-slate-300">Never miss an update.</span><br>Join our newsletter!</h1>
+                    <div class=" flex items-center md:space-x-4 space-x-2">
+                        <div class="border md:px-5 px-3 py-3 rounded-lg flex items-center space-x-3">
+                            <i class="fa-regular fa-envelope text-slate-400 text-2xl"></i>
+                            <input class=" outline-none border-none dark:bg-slate-900 dark:text-slate-50" type="text" placeholder="your@email.com">
+                        </div>
+                        <div>
+                             <button class=" bg-blue-500 px-5 py-3 rounded-lg text-slate-50 font-semibold">Notify me <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+            <div class=" mt-40 grid lg:grid-cols-2 md:grid-cols-2 gap-10">
+                <div class=" item">
+                   <img class=" lg:w-[600px] lg:h-[300px] md:h-[250px] rounded-3xl hover:scale-105 hover:opacity-75 transition duration-200" src="/assets/images/microsocial-speaker-1536x768.png" alt="">
+                   <div class=" mt-5 mb-5 lg:space-x-3 md:space-x-1 flex items-center">
+                       <span class=" lg:text-sm text-xs text-slate-400">November  21,2022 |</span>
+                       <span class=" lg:text-sm text-xs text-slate-400">All |</span>
+                       <span class=" lg:text-sm text-xs text-slate-400">Annuuncement |</span>
+                       <span class=" lg:text-sm text-xs text-slate-400">micro frontends |</span>
+                       <span class=" lg:text-sm text-xs text-slate-400">Portals |</span>
+                   </div>
+                   <div>
+                       <h1 class=" text-3xl font-bold max-w-xl dark:text-slate-100">Announcing Your MFE Summit 2023 Speakers</h1>
+                       <div class=" flex items-center space-x-3 mt-5">
+                            <img class=" w-10 h-10 rounded-full" src="/assets/images/jacklin.png" alt="">
+                            <div>
+                               <h1 class=" font-semibold dark:text-slate-200">Jacklin Altman</h1>
+                               <span class=" text-xs font-semibold text-slate-400">Content Marketing Manager</span>
+                            </div>
+                       </div>
+                   </div>
+                </div>
+                <div class=" item">
+                   <img class=" lg:w-[600px] lg:h-[300px] md:h-[250px] rounded-3xl hover:scale-105 hover:opacity-75 transition duration-200" src="/assets/images/native-versioning-appflow-feature-image-1536x768.png" alt="">
+                   <div class=" mt-5 mb-5 flex items-center md:space-x-3">
+                       <span class=" lg:text-sm text-xs text-slate-400">November 18,2022 |</span>
+                       <span class=" lg:text-sm text-xs text-slate-400">Announcements |</span>
+                       <span class=" lg:text-sm text-xs text-slate-400">Appflow |</span>
+                       <span class=" lg:text-sm text-xs text-slate-400">CLI |</span>
+                       <span class=" lg:text-sm text-xs text-slate-400">Cloud |</span>
+                   </div>
+                   <div>
+                       <h1 class=" text-3xl font-bold max-w-xl dark:text-slate-100">Support added for Live Update native versioning in Ionic Cloud CLI</h1>
+                       <div class=" flex items-center space-x-3 mt-5">
+                            <img class=" w-10 h-10 rounded-full" src="/assets/images/cecelia.jpeg" alt="">
+                            <div>
+                               <h1 class=" font-bold dark:text-slate-100">Cecelia Martinez</h1>
+                               <span class=" text-xs font-semibold text-slate-400">Developer Advocate</span>
+                            </div>
+                       </div>
+                   </div>
+                </div>
+           </div>
+     </div>
+
+     <!-- more the blog section -->
+     <div class=" container mx-auto lg:px-40 px-5 py-20">
+            <div>
+                 <h1 class=" text-2xl font-bold mb-8 item dark:text-slate-100">More from the Blog</h1>
+            </div>
+            <div class=" grid md:grid-cols-3 grid-cols-1 gap-y-20 lg:gap-x-12 md:gap-x-5">
+                <div class=" item">
+                    <img class=" lg:w-[400px] lg:h-[200px] md:w-[200px] md:h-[150px] rounded-2xl hover:opacity-70 hover:scale-105 transition-all duration-200" src="/assets/images/build-stacks-feature-image-1536x768.png" alt="">
+                    <div class=" mt-3">
+                        <span class=" lg:text-sm md:text-xs text-slate-500">November 14,2022 |</span>
+                        <span class=" lg:text-sm md:text-xs text-slate-500">Annuouncements |</span>
+                        <span class=" lg:text-sm md:text-xs text-slate-500">Appflow...</span>
+                    </div>
+                    <h1 class=" lg:text-2xl md:text-xl text-2xl font-bold mt-4 dark:text-slate-100">Latest Appflow Build Stack Updates</h1>
+                </div>
+                <div class=" item">
+                    <img class=" lg:w-[400px] lg:h-[200px] md:w-[200px] md:h-[150px] rounded-2xl hover:opacity-70 hover:scale-105 transition-all duration-200" src="/assets/images/chrome-108-feature-image-2048x1024.png" alt="">
+                    <div class=" mt-3">
+                    <span class=" lg:text-sm md:text-xs text-slate-500">November 9,2022 |</span>
+                    <span class=" lg:text-sm md:text-xs text-slate-500">Annuouncements |</span>
+                    </div>
+                    <h1 class=" lg:text-2xl md:text-xl text-2xl font-bold mt-4 dark:text-slate-100">Preparing your ionic app for changes coming Chrome for Android</h1>
+                </div>
+                <div class=" item">
+                    <img class=" lg:w-[400px] lg:h-[200px] md:w-[200px] md:h-[150px] rounded-2xl hover:opacity-70 hover:scale-105 transition-all duration-200" src="/assets/images/ionic-outsystems-feature-image-1536x768.png" alt="">
+                    <div class=" mt-3">
+                    <span class=" lg:text-sm md:text-xs text-slate-500">November 7,2022 |</span>
+                    <span class=" lg:text-sm md:text-xs text-slate-500">All |</span>
+                    <span class=" lg:text-sm md:text-xs text-slate-500">Annuouncements |</span>
+                    <span class=" lg:text-sm md:text-xs text-slate-500">ann...</span>
+                    </div>
+                    <h1 class=" lg:text-2xl md:text-xl text-2xl font-bold mt-4 dark:text-slate-100">Ionic + Outststems:The Future of Enterprise App Development</h1>
+                </div>
+                <div class="item">
+                    <img class="lg:w-[400px] lg:h-[200px] md:w-[200px] md:h-[150px] rounded-2xl hover:opacity-70 hover:scale-105 transition-all duration-200" src="/assets/images/custom-live-update-demo-final-.png" alt="">
+                    <div class=" mt-3">
+                        <span class=" lg:text-sm md:text-xs text-slate-500">November 4,2022 |</span>
+                        <span class=" lg:text-sm md:text-xs text-slate-500">Annuouncements |</span>
+                        <span class=" lg:text-sm md:text-xs text-slate-500">Appflow...</span>
+                    </div>
+                    <h1 class=" lg:text-2xl md:text-xl  text-2xl font-bold mt-4 dark:text-slate-100">Learn how to customize live updates with the Live Update API demo app</h1>
+                </div>
+                <div class=" item">
+                    <img class="lg:w-[400px] lg:h-[200px] md:w-[200px] md:h-[150px] rounded-2xl hover:opacity-70 hover:scale-105 transition-all duration-200" src="/assets/images/hybrids-feature-image-1536x768.png" alt="">
+                    <div class=" mt-3">
+                        <span class=" lg:text-sm md:text-xs text-slate-500">November 4,2022 |</span>
+                        <span class=" lg:text-sm md:text-xs text-slate-500">All |</span>
+                        <span class=" lg:text-sm md:text-xs text-slate-500">Perspcetives|</span>
+                        <span class=" lg:text-sm md:text-xs text-slate-500">hybird |</span>
+                    </div>
+                    <h1 class=" lg:text-2xl md:text-xl text-2xl font-bold mt-4 dark:text-slate-100">The economics of Native vs Hybrid Applications</h1>
+                </div>
+                <div class="item">
+                    <img class=" lg:w-[400px] lg:h-[200px] md:w-[200px] md:h-[150px] rounded-2xl hover:opacity-70 hover:scale-105 transition-all duration-200" src="/assets/images/ios-schemas-android-variants-feature-image-1536x768 (1).png" alt="">
+                    <div class=" mt-3">
+                    <span class=" lg:text-sm md:text-xs text-slate-500">October 31,2022 |</span>
+                   
+                    <span class=" lg:text-sm md:text-xs text-slate-500">Annuouncements |</span>
+                    <span class=" lg:text-sm md:text-xs text-slate-500">Andriod...</span>
+                    </div>
+                    <h1 class=" lg:text-2xl md:text-xl text-2xl font-bold mt-4 dark:text-slate-100">iOS Schemes and Android Variants support now in Appflow</h1>
+                </div>
+                <div class="item">
+                    <img class=" lg:w-[400px] lg:h-[200px] md:w-[200px] md:h-[150px] rounded-2xl hover:opacity-70 hover:scale-105 transition-all duration-200" src="/assets/images/Ionic-Q3-Awards.png" alt="">
+                    <div class=" mt-3">
+                        <span class=" lg:text-sm md:text-xs text-slate-500">Octover 28,2022 |</span>
+                        <span class=" lg:text-sm md:text-xs text-slate-500">All |</span>
+                        <span class=" lg:text-sm md:text-xs text-slate-500">Annuouncements |</span>
+                        <span class=" lg:text-sm md:text-xs text-slate-500">Awa...</span>
+                    </div>
+                    <h1 class=" lg:text-2xl md:text-xl text-2xl font-bold mt-4 dark:text-slate-100">Ionic Wins Comparably Awards for Best  Work-Life Balance and Happiest Employees</h1>
+                </div>
+                <div class=" item">
+                    <img class=" lg:w-[400px] lg:h-[200px] md:w-[200px] md:h-[150px] rounded-2xl hover:opacity-70 hover:scale-105 transition-all duration-200" src="/assets/images/appflowliveupdates-feature-image-1-1536x845 (1).png" alt="">
+                    <div class=" mt-3">
+                        <span class=" lg:text-sm md:text-xs text-slate-500">Octover 26,2022 |</span>
+                        <span class=" lg:text-sm md:text-xs text-slate-500">All |</span>
+                        <span class=" lg:text-sm md:text-xs text-slate-500">Annuouncements |</span>
+                        <span class=" lg:text-sm md:text-xs text-slate-500">Appflow...</span>
+                    </div>
+                    <h1 class=" lg:text-2xl md:text-xl text-2xl font-bold mt-4 dark:text-slate-100">Self-Hosted Live Updates are Here</h1>
+                </div>
+                <div class=" item">
+                    <img class=" lg:w-[400px] lg:h-[200px] md:w-[200px] md:h-[150px] rounded-2xl hover:opacity-70 hover:scale-105 transition-all duration-200" src="/assets/images/appflow-reactnative-feature-image-1536x845.png" alt="">
+                    <div class=" mt-3">
+                    <span class="lg:text-sm md:text-xs text-slate-500">October 26,2022 |</span>
+                   
+                    <span class=" lg:text-sm md:text-xs text-slate-500">Annuouncements |</span>
+                    <span class="lg:text-sm md:text-xs text-slate-500">Appflow...</span>
+                    </div>
+                    <h1 class=" lg:text-2xl md:text-xl text-2xl dark:text-slate-100">Appflow,now for React Native</h1>
+                </div>
+            </div>
+            <div class=" border-b-2 mt-20 ">
+
+            </div>
+            <div class="circle flex items-center justify-center mt-10 space-x-8">
+                <div class="circle-body dark:text-slate-100 active-circle">1</div>
+                <div class="circle-body dark:text-slate-100">2</div>
+                <div class="circle-body dark:text-slate-100">3</div>
+                <div class="circle-body dark:text-slate-100">4</div>
+                <div class="circle-body dark:text-slate-100">5</div>
+                <div class="circle-body dark:text-slate-100">...</div>
+                <div class="circle-body dark:text-slate-100">23</div>
+                <div class="circle-body dark:text-slate-100"><i class="fa-solid fa-chevron-right"></i></div>
+            </div>
+     </div>
+     <div class=" container mx-auto lg:px-40 px-5 py-20">
+        <div class=" mt-20">
+            <div class="item flex lg:flex-row md:flex-col flex-col md:space-y-5 lg:space-y-0 space-y-5 items-center justify-between px-10 py-10 rounded-2xl bg-slate-100">
+               <div>
+                   <h1 class=" md:text-4xl text-2xl font-bold "> Get our newsletter <br><span class=" text-slate-800 text-lg font-medium">Never spam.Only the good stuff</span></h1>
+               </div>
+               <div class=" flex items-center md:space-x-4 space-x-2">
+                   <div class="border md:px-5 px-3 py-3 rounded-lg flex items-center space-x-3">
+                       <i class="fa-regular fa-envelope text-slate-400 text-2xl"></i>
+                       <input class=" outline-none border-none bg-stone-100" type="text" placeholder="your@email.com">
+                   </div>
+                   <div>
+                        <button class=" bg-blue-500 px-5 py-3 rounded-lg text-slate-50 font-semibold">Join <i class="fa-solid fa-arrow-right"></i></button>
+                   </div>
+               </div>
+            </div>
+        </div>
+     </div>
+
+
+    <!-- footer -->
+     <footer>
+        <div class=" border-b-2 mb-40">
+         
+        </div>
+        <div class="container mx-auto px-5 lg:px-28">
+            <div class="mb-20 grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-10">
+                <div>
+                    <img class="w-20 hidden dark:block" src="/assets/images/ionic brand kit/ionic/light logotype/ionic logotype white on blue.png" alt="">
+                    <svg class=" dark:hidden" width="80" height="80" viewBox="0 0 698 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M669.427 141.898C666.143 150.728 657.949 155.628 647.824 155.628C632.797 155.628 620.616 143.451 620.616 128.43C620.616 113.409 632.797 101.232 647.824 101.232C657.95 101.232 665.892 105.55 669.428 114.963H697.177C692.581 90.8263 672.505 75.3333 647.824 75.3333C618.488 75.3333 594.707 99.1054 594.707 128.43C594.707 157.754 618.488 181.526 647.824 181.526C672.505 181.526 693.84 164.193 697.176 141.898H669.427Z" fill="black"/>
+                        <path d="M555.15 78.0007H584.042V179.649H555.15V78.0007Z" fill="black"/>
+                        <path d="M586.949 53.4355C586.949 63.0649 579.14 70.871 569.507 70.871C559.874 70.871 552.064 63.0649 552.064 53.4355C552.064 43.8061 559.874 36 569.507 36C579.14 36 586.949 43.8061 586.949 53.4355Z" fill="black"/>
+                        <path d="M472.392 90.441C477.237 81.6971 488.247 75.7277 504.103 75.7277C529.736 75.7277 543.301 92.0385 543.301 116.252V179.646H514.409V119.279C514.409 107.424 509.124 99.269 496.351 99.269C482.346 99.269 474.594 107.845 474.594 121.381V179.562H445.702V77.9978H472.392V90.441Z" fill="black"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M383.239 155.628C398.264 155.628 410.445 143.451 410.445 128.432C410.445 113.412 398.264 101.235 383.239 101.235C368.213 101.235 356.032 113.412 356.032 128.432C356.032 143.451 368.213 155.628 383.239 155.628ZM383.239 181.526C412.573 181.526 436.354 157.755 436.354 128.432C436.354 99.1082 412.573 75.337 383.239 75.337C353.904 75.337 330.124 99.1082 330.124 128.432C330.124 157.755 353.904 181.526 383.239 181.526Z" fill="black"/>
+                        <path d="M291.086 78.0007H319.978V179.649H291.086V78.0007Z" fill="black"/>
+                        <path d="M322.885 53.4355C322.885 63.0649 315.076 70.871 305.443 70.871C295.809 70.871 288 63.0649 288 53.4355C288 43.8061 295.809 36 305.443 36C315.076 36 322.885 43.8061 322.885 53.4355Z" fill="black"/>
+                        <path d="M28.8 120C28.8 69.6316 69.6316 28.8 120 28.8C140.276 28.8 158.996 35.4057 174.143 46.6017C178.116 37.2507 186.122 30.0268 195.978 27.1135C175.295 10.1784 148.828 0 120 0C53.7258 0 0 53.7258 0 120C0 186.274 53.7258 240 120 240C186.274 240 240 186.274 240 120C240 106.13 237.641 92.7867 233.296 80.3656C227.385 88.3578 218.082 93.6899 207.514 94.2366C209.912 102.396 211.2 111.039 211.2 120C211.2 170.368 170.368 211.2 120 211.2C69.6316 211.2 28.8 170.368 28.8 120Z" fill="black"/>
+                        <path d="M237.533 95.687C236.454 90.4492 235.034 85.3336 233.296 80.3655C227.385 88.3576 218.082 93.6897 207.514 94.2365C209.21 100.008 210.351 106.021 210.874 112.218C222.003 110.85 231.624 104.605 237.533 95.687Z" fill="black"/>
+                        <path d="M120 172.5C148.927 172.5 172.5 148.972 172.5 120C172.5 91.0734 148.972 67.5001 120 67.5001C91.0283 67.5001 67.5 91.0734 67.5 120C67.5 148.927 91.0733 172.5 120 172.5Z" fill="black"/>
+                        <path d="M198.75 75.0001C213.247 75.0001 225 63.2475 225 48.7501C225 34.2526 213.247 22.5001 198.75 22.5001C184.253 22.5001 172.5 34.2526 172.5 48.7501C172.5 63.2475 184.253 75.0001 198.75 75.0001Z" fill="black"/>
+                    </svg>
+                    
+                </div>
+                <div>
+                    <ul class="space-y-3">
+                        <span class=" dark:text-slate-300">The Platform</span>
+                        <li class=" text-sm text-[#445b78]">Overview</li>
+                        <li class=" text-sm text-[#445b78]">Build</li>
+                        <li class=" text-sm text-[#445b78]">Secure</li>
+                        <li class=" text-sm text-[#445b78]">Deliver</li>
+                        <li class=" text-sm text-[#445b78]">Why Ionic?</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="space-y-3">
+                        <span class=" dark:text-slate-300">Products</span>
+                        <li class=" text-sm  text-[#445b78]">Framework</li>
+                        <li class=" text-sm  text-[#445b78]">Capacitor</li>
+                        <li class=" text-sm  text-[#445b78]">Appflow</li>
+                        <li class=" text-sm  text-[#445b78]">Identity Vault</li>
+                        <li class=" text-sm  text-[#445b78]">Secure Storage</li>
+                        <li class=" text-sm  text-[#445b78]">Auth Connect</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="space-y-3">
+                        <span class=" dark:text-slate-300">Resources</span>
+                        <li class=" text-sm text-[#445b78]">Resource Center</li>
+                        <li class=" text-sm text-[#445b78]">Blog</li>
+                        <li class=" text-sm text-[#445b78]">Articles</li>
+                        <li class=" text-sm text-[#445b78]">Webinars</li>
+                        <li class=" text-sm text-[#445b78]">Case Studies</li>
+                        <li class=" text-sm text-[#445b78]">Videos</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="space-y-3">
+                        <span class=" dark:text-slate-300">Company</span>
+                        <li class=" text-sm  text-[#445b78]">About us</li>
+                        <li class=" text-sm  text-[#445b78]">Customers</li>
+                        <li class=" text-sm  text-[#445b78]">Brand</li>
+                        <li class=" text-sm  text-[#445b78]">Contact</li>
+                        <li class=" text-sm  text-[#445b78]">Careers</li>
+                        <li class=" text-sm  text-[#445b78]">Privacy</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="space-y-3">
+                        <span class="dark:text-slate-300">Support</span>
+                        <li class=" text-sm  text-[#445b78]">Help Center</li>
+                        <li class=" text-sm  text-[#445b78]">Partners</li>
+                        <li class=" text-sm  text-[#445b78]">Advisory</li>
+                        <li class=" text-sm  text-[#445b78]">Enterprise Guide</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mb-14">
+                <div class=" px-3 mb-5">
+                    <div class=" border-b border-slate-500"></div>
+                </div>
+                <div class="flex items-center justify-between px-5">
+                    <span class=" text-xs md:text-base md:font-semibold  text-slate-900 dark:text-slate-300">Copyright © 2022 Ionic Terms Privacy</span>
+                    <div class=" flex items-center space-x-5">
+                            <i class="fa-brands fa-twitter  text-slate-900 dark:text-slate-300"></i>
+                            <i class="fa-brands fa-github  text-slate-900 dark:text-slate-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+     <script>
+        const searchBody = document.querySelector('.search-body')
+          
+          const iconSearch = document.querySelector('.icon-search')
+          
+          iconSearch.addEventListener('click',event =>{
+              searchBody.classList.toggle('active-body')
+              
+          })
+
+           ScrollReveal().reveal('.item', {
+                                delay: 375,
+                                duration: 600,
+                                reset: true,
+                                distance: '20px',
+                                interval:300, 
+                                scale: 0.85 
+                            });
+                            
+                            const circle = document.querySelector('.circle')
+                            const circleBody = document.querySelectorAll('.circle-body')
+
+                            circleBody.forEach(body =>{
+                                body.addEventListener('click',()=>{
+                                    circleBody.forEach((body)=>{
+                                        body.classList.remove('active-circle')
+                                    })
+                                    body.classList.add('active-circle')
+                                })
+           })
+           const navAni = document.querySelector('.nav-ani')
+            
+            let head= document.querySelector('.head')
+                        var waypoint = new Waypoint({
+                        element: document.getElementById('native'),
+                        handler: function(direction) {
+                        if(direction === 'down'){
+                                navAni.classList.add('fixed','w-full','animate__fadeInDown','shadow-xl','top-0')
+                                
+                        }
+
+                        else
+                        {
+                                navAni.classList.remove('fixed','w-full','animate__fadeInDown','shadow-xl','top-0')
+                               
+                        }
+                        },
+                        offset: '20%'
+                        });
+
+
+          
+           
+           let menuBar = document.querySelector('.menu-bar')
+           let menuScreen = document.querySelector('.menu-screen')
+           let menuClose = document.querySelector('.menu-close')
+                        menuBar.addEventListener('click',()=>{
+                            menuScreen.classList.toggle("open")
+                            
+                        })
+                        
+                        menuClose.addEventListener('click',()=>{
+                            menuScreen.classList.remove("open")
+                        })
+           
+     </script>
+</body>
+</html>
